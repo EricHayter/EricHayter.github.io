@@ -2,7 +2,6 @@ body{
 background: linear-Gradient(180deg,	#696969,#808080);
 }
 
-
 main {
 background-color: white;
 color: black;
@@ -12,7 +11,7 @@ border-radius: 25px;
 }
 
 p {
-font-family: Roboto;
+font-family: 'Times New Roman', Times, serif;
 font-size: large;
 color: black;
 padding: 0px 20px 20px 20px;
@@ -20,13 +19,13 @@ margin: 0px
 }
 
 h1 {
-font-family: "Secular One";
+font-family:  'Times New Roman', Times, serif;
 padding: 20px 20px 0px 20px;
 margin: 0px
 }
 
 a {
-font-family: Roboto;
+font-family: 'Times New Roman', Times, serifo;
 font-size: large;
 color: black;
 font-weight: bold;
