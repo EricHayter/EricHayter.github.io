@@ -5,15 +5,13 @@
 }
 
 :root {
-    --ff-primary: 'Josefin Sans', sans-serif; 
-    --ff-secondary: 'Open Sans', sans-serif; 
+    --ff-primary: 'Newsreader', serif;
 
     --fw-regular: 300;
-    --fw-bold: 900;
 
-    --clr-light: #eeeeee;
-    --clr-dark: #3e3a3a;
-    --clr-accent: #9999ff;
+    --clr-light: #fafafa;
+    --clr-dark: #000000;
+    
 
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -31,7 +29,6 @@
 }
 
 /* basic styling */
-
 body {
     background-color:var(--clr-light);
     color: var(--clr-dark);
@@ -50,9 +47,6 @@ img {
     max-width: 100%;
 }
 
-
-strong { font-weight: var(--fw-bold)}
-
 /* typography */
 h1,
 h2,
@@ -65,37 +59,21 @@ h1 { font-size: var(--fs-h1) }
 h2 { font-size: var(--fs-h2) }
 h3 { font-size: var(--fs-h3) }
 
-.section__title {
-    margin-bottom: 0.25em;
-}
-
-.section__title--intro {
+h1,
+h2,
+h3 {
     font-weight: var(--fw-regular);
 }
 
-.section__title--intro strong{
-    display: block;
+.section__title {
+    margin-bottom: 0.25em;
+    text-align: center;
 }
+
 
 .section__subtitle {
     margin: 0;
     font-size: var(--fs-h3);
-}
-
-.section__subtitle--intro,
-.section__subtitle--about-me {
-    background-color: var(--clr-accent);
-    padding: 0.25em 1em;
-    font-family: var(--ff-secondary);
-    margin-bottom: 1em;
-
-}
-
-.section__title--projects,
-.section__subtitle--project,
-.section__info--project,
-.section__desc--project {
-    color: var(--clr-light);
 }
 
 .section__info--project {
@@ -123,20 +101,10 @@ nav { display: none;}
         grid-template-columns: max-content;
         column-gap: 1em;
     }
-
-    .section__subtitle--intro {
-        align-self: start;
-        grid-column: -1/1;
-    }
-
 }
 
 
 /* My Project Section */
-.projects {
-    background-color: var(--clr-dark);
-}
-
 .projects__list {
     display: grid;
     grid-template-columns: 1fr;
