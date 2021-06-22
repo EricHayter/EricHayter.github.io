@@ -1,9 +1,6 @@
-*,
-*, ::before,
-*, ::after {
-    box-sizing: border-box;
+html {
+    padding: 0px;
 }
-
 :root {
     --ff-primary: 'Newsreader', serif;
 
@@ -24,7 +21,7 @@
         --fs-h1: 4.5rem;
         --fs-h2: 3.75rem; 
         --fs-h3: 1.5rem;
-        --fs-body: 1.125rem;
+        --fs-body: 1.5rem;
     }
 }
 
@@ -36,12 +33,13 @@
 }
 
 body {
+    margin: 0;
     background-color:var(--clr-light);
     color: var(--clr-dark);
-    margin: 0;
     font-family: var(--ff-primary);
     font-size: var(--fs-body);
     line-height: 1.6;
+
 }
 
 section {
@@ -54,16 +52,10 @@ img {
 }
 
 /* typography */
-h1,
-h2,
-h3 {
-    line-height: 1;
-    margin: 0;
-}
-
 h1 { font-size: var(--fs-h1) }
 h2 { font-size: var(--fs-h2) }
-h3 { font-size: var(--fs-h3) }
+h3 { font-size: var(--fs-h3)}
+p { font-size: var(--fs-body) }
 
 h1,
 h2,
@@ -76,7 +68,6 @@ h3 {
     text-align: center;
 }
 
-
 .section__subtitle {
     margin: 0;
     font-size: var(--fs-h3);
@@ -84,15 +75,21 @@ h3 {
 
 
 /* Intro Section */
+#section__title--intro {
+    margin: auto;
+    padding: 3.5em 0em 3.5em 0em;
+    text-align: left;
+    width: max-content;
+    color: var(--clr-light);
+}
 
-.intro {
-    position: relative;
+header {
+    background-image: url(content/lake2.jpg);
 }
 
 @media (min-width: 600px) {
     .intro {
         display: grid;
-        width: min-content;
         margin: 0 auto;
         grid-template-columns: max-content;
         column-gap: 1em;
