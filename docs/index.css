@@ -110,7 +110,12 @@ header {
 /* footer */
 footer {
     background-color: var(--clr-dark);
+    padding: 0.25em;
+}
+
+#footer-text {
+    padding: 0;
     color: var(--clr-light);
+    font-size: 0.5em;
     text-align: center;
-    padding: 0.5em;
 }
