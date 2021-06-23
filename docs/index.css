@@ -27,12 +27,6 @@ html {
 }
 
 /* basic styling */
-.projects,
-.about-me {
-    max-width: 1400px;
-    margin: auto;
-}
-
 body {
     margin: 0;
     padding: 0;
@@ -45,6 +39,8 @@ body {
 }
 
 section {
+    max-width: 1400px;
+    margin: auto;
     padding: 5em 2em;
 }
 
@@ -76,10 +72,38 @@ h3 {
 }
 
 
+/* Nav Bar */
+nav {
+    position: sticky;
+    top: 0px;
+    color: var(--clr-light);
+    background-color: var(--clr-dark);
+}
+
+.nav--div {
+    margin: 0 auto;
+    width: max-content;
+}
+
+.nav-link:link,
+.nav-link:visited,
+.nav-link:active {
+    text-decoration: none;
+    color: var(--clr-light);
+    padding: 0.3em 2em;
+}
+
+.nav-link:hover {
+    text-decoration: none;
+    background-color: var(--clr-light);
+    color: var(--clr-dark);
+    padding: 0.3em 2em;
+}
+
 /* Intro Section */
 #section__title--intro {
     margin: auto;
-    padding: 3.5em 0em 3.5em 0em;
+    padding: 5em 0em;
     text-align: left;
     width: max-content;
     color: var(--clr-light);
@@ -89,21 +113,38 @@ header {
     background-image: url(content/lake2.jpg);
 }
 
-@media (min-width: 600px) {
-    .intro {
-        display: grid;
-        margin: 0 auto;
-        grid-template-columns: max-content;
-        column-gap: 1em;
-    }
-}
-
 
 /* My Project Section */
 .project {
     margin: auto;
     display: grid;
     grid-template-rows: auto 1fr auto;
+}
+
+
+/* Contact Me Section */
+.contact--button {
+    margin: 0 0.1em;
+    padding: 0.5em;
+    width: max-content;
+    background-color: var(--clr-dark);
+    color: var(--clr-light);
+    font-family: var(--ff-primary);
+    font-size: var(--fs-h3);
+    border-style: solid;
+    border-color: var(--clr-dark);
+    border-radius: 0.5em;
+}
+
+.contact--button:hover {
+    transform: scale(1.1);
+    color: var(--clr-dark);
+    background-color: var(--clr-light);
+}
+
+.button-container {
+    width: max-content;
+    margin: auto;
 }
 
 

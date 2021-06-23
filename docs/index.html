@@ -14,17 +14,32 @@
         <link href="https://fonts.googleapis.com/css2?family=Newsreader&display=swap" rel="stylesheet">
 
     </head>
+
+    <!-- Nav Bar -->
+    <nav>
+        <div class="nav--div">
+            <a class="nav-link" href="#about-me">About</a>
+            <a class="nav-link" href="#projects">My Projects</a>
+            <a class="nav-link" href="#contact">Contact Me</a>
+        </div>
+    </nav>
+
+
+
+    <!--Home Screen-->
     <header>
-        <!--Home Screen-->
         <h1 class="section__title"  id="section__title--intro">
             Eric Hayter. <br>
             highschool coding enthusiast.
         </h1>
     </header>
 
+
+
+
     <body>
         <!--About Me Screen-->
-        <section class="about-me">
+        <section class="about-me" id="about-me">
             <h2 class="section__title section__title--about-me">About</h2>
             <p>I was born in Ajax, Ontario, and moved to Ottawa in 2018, and have been living here ever since. 
                 I am currently in grade 12 at Sacred Heart High School in Stittsville, Ontario. In my 10<sup>th</sup> year, 
@@ -37,12 +52,7 @@
         <hr>
 
         <!--Projects Screen-->
-        <!--
-            main idea is to make a flex grid and have 1x1 pictures of all of my projects
-            make a link so when I click them it gives more information
-            e.g. what the name of the project is the github source technologies....
-        -->
-        <section class="projects">
+        <section class="projects" id="projects">
             <h2 class="section__title">My Projects</h2>
             <div>
                 
@@ -57,6 +67,29 @@
 
             </div>
         </section>
+
+        <hr>
+
+
+        <!-- Contacts section -->
+        <script>
+            function copyContact(id, value) {
+                var copied = navigator.clipboard.writeText(value);
+
+                /* Alert the copied text */
+                alert("copied " + id + " to clipboard.");
+            }
+        </script>
+
+        <section class="contact-me" id="contact">
+            <h2 class="section__title">Contacts</h2>
+            <div class="button-container">
+                <button class="contact--button" id="email" value="hayter.eric@gmail.com" onclick="copyContact(this.id, this.value)">My Email</button>
+                <button class="contact--button" id="github" value="EricHayter" onclick="copyContact(this.id, this.value)">My Github</button>
+            </div>
+        </section>
+
+
 
         <!-- Footer -->
         <footer>
