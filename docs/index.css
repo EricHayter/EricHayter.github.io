@@ -10,20 +10,10 @@ html {
     --clr-light: #fafafa;
     --clr-dark: #000000;
     
-
-    --fs-h1: 3rem;
-    --fs-h2: 2.25rem;
-    --fs-h3: 1.25rem;
-    --fs-body: 1rem;
-}
-
-@media (min-width: 800px) {
-    :root {
-        --fs-h1: 4.5rem;
-        --fs-h2: 3.75rem; 
-        --fs-h3: 1.5rem;
-        --fs-body: 1.5rem;
-    }
+    --fs-h1: 4.5rem;
+    --fs-h2: 3.75rem; 
+    --fs-h3: 2.5rem;
+    --fs-body: 1.5rem;
 }
 
 /* basic styling */
@@ -115,11 +105,30 @@ header {
 
 
 /* My Project Section */
-.project {
-    margin: auto;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
+
+.project-button {
+    text-decoration: none;
+}
+
+.project-thumbnail {
+    flex: 0 1 150px;
+    margin: 1rem;
+    width: 500px;
+    height: 500px;
+        display: grid;
+    place-items: center;
+    background-color: var(--clr-dark);
+    color: var(--clr-light);
+    border-radius: 0.5em;
+}
+
+#ascii_bot { background-image: url(content/ascii_thumbnail.jpg); }
+
 
 
 /* Contact Me Section */
