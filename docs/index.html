@@ -1,124 +1,108 @@
 <!DOCTYPE html>
 <html lang="eng">
-	<head>
-		<meta charset="UTF-8" />
-		<meta
-			name="viewport"
-			content="width=divice-width, initial-scale=1.0"
-		/>
-		<title>💻 Eric's Portfolio 💻</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=divice-width, initial-scale=1.0" />
+    <title>💻 Eric's Portfolio 💻</title>
 
-		<!--CSS and Font-->
-		<link rel="stylesheet" href="index.css" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link
-			rel="preconnect"
-			href="https://fonts.gstatic.com"
-			crossorigin
-		/>
-		<link
-			href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&display=swap"
-			rel="stylesheet"
-		/>
-	</head>
+    <!--CSS and Font-->
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-	<!-- Nav Bar -->
-	<nav>
-		<div class="nav--div">
-			<a class="nav-link" href="#about-me">About</a>
-			<a class="nav-link" href="#projects">My Projects</a>
-			<a class="nav-link" href="#contact">Contact Me</a>
-		</div>
-	</nav>
+  <!-- Nav Bar -->
+  <nav>
+    <div class="nav--div">
+      <a class="nav-link" href="#about-me">About</a>
+      <a class="nav-link" href="#projects">My Projects</a>
+      <a class="nav-link" href="#contact">Contact Me</a>
+    </div>
+  </nav>
 
-	<!--Home Screen-->
-	<header>
-		<h1 class="section__title" id="section__title--intro">
-			Eric Hayter. <br />
-			coding enthusiast.
-		</h1>
-	</header>
+  <!--Home Screen-->
+  <header>
+    <h1 class="section__title" id="section__title--intro">
+      Eric Hayter. <br />
+      coding enthusiast.
+    </h1>
+  </header>
 
-	<div class="spacer wave1"></div>
+  <div class="spacer wave1"></div>
 
-	<body>
-		<!--About Me Screen-->
-		<section class="about-me" id="about-me">
-			<h2 class="section__title section__title--about-me">
-				About
-			</h2>
-			<p class="info-paragraph">
-				I was born in Ajax, Ontario, and moved to Ottawa
-				in 2018, and have been living here ever since. I
-				am currently in grade 12 at Sacred Heart High
-				School in Stittsville, Ontario. In my 10
-				year, on a whim, I decided to swap my gym class
-				out for an introductory course for computer
-				science, and it was love at first sight, as some
-				may say. I also have other hobbies outside of
-				coding and programming including, playing jazz
-				piano, and long-distance running.
-			</p>
-		</section>
+  <body>
+    <!--About Me Screen-->
+    <section class="about-me" id="about-me">
+      <h2 class="section__title section__title--about-me">About</h2>
+      <p class="info-paragraph">
+        I was born in Ajax, Ontario, and moved to Ottawa in 2018, and have been
+        living here ever since. I am currently in grade 12 at Sacred Heart High
+        School in Stittsville, Ontario. In my 10 year, on a whim, I decided to
+        swap my gym class out for an introductory course for computer science,
+        and it was love at first sight, as some may say. I also have other
+        hobbies outside of coding and programming including, playing jazz piano,
+        and long-distance running.
+      </p>
+    </section>
 
-		<div class="spacer wave2"></div>	
+    <div class="spacer wave2"></div>
 
-		<!--Projects Screen-->
-		<section class="projects" id="projects">
-			<h2 class="section__title">My Projects</h2>
-			<div class="project-container">
-					  <a class="project-button" href="ascii_bot.html">
+    <!--Projects Screen-->
+    <section class="projects" id="projects">
+      <h2 class="section__title">My Projects</h2>
+      <div class="project-container">
+        <a class="project-button" href="ascii_bot.html">
+          <h3 class="project-title">ASCII Bot</h3>
+        </a>
+        <a class="project-button" href="#">
+          <h3>Portfolio Website</h3>
+        </a>
+      </div>
+    </section>
 
-					<h3 class="project-title">ASCII Bot</h3>
-				</a>
-				<a class="project-button" href="#">
+    <div class="spacer wave3"></div>
 
-						<h3>Portfolio Website</h3>
-				</a>
-			</div>
-		</section>
+    <!-- Contacts section -->
+    <script>
+      function copyContact(id, value) {
+        var copied = navigator.clipboard.writeText(value);
 
-		<div class="spacer wave3"></div>
+        /* Alert the copied text */
+        alert("copied " + id + " to clipboard.");
+      }
+    </script>
 
-		<!-- Contacts section -->
-		<script>
-			function copyContact(id, value) {
-				var copied =
-					navigator.clipboard.writeText(value);
+    <section class="contact-me" id="contact">
+      <h2 class="section__title">Contacts</h2>
+      <div class="button-container">
+        <button
+          class="contact--button"
+          id="email"
+          value="hayter.eric@gmail.com"
+          onclick="copyContact(this.id, this.value)"
+        >
+          My Email
+        </button>
+        <button
+          class="contact--button"
+          id="github"
+          value="EricHayter"
+          onclick="copyContact(this.id, this.value)"
+        >
+          My Github
+        </button>
+      </div>
+    </section>
 
-				/* Alert the copied text */
-				alert("copied " + id + " to clipboard.");
-			}
-		</script>
-
-		<section class="contact-me" id="contact">
-			<h2 class="section__title">Contacts</h2>
-			<div class="button-container">
-				<button
-					class="contact--button"
-					id="email"
-					value="hayter.eric@gmail.com"
-					onclick="copyContact(this.id, this.value)"
-				>
-					My Email
-				</button>
-				<button
-					class="contact--button"
-					id="github"
-					value="EricHayter"
-					onclick="copyContact(this.id, this.value)"
-				>
-					My Github
-				</button>
-			</div>
-		</section>
-
-		<!-- Footer -->
-		<footer>
-			<p id="footer-text">
-				Copyrights © Eric Hayter | Built with &lt3 |
-				June 6th, 2021.
-			</p>
-		</footer>
-	</body>
+    <!-- Footer -->
+    <footer>
+      <p id="footer-text">
+        Copyrights © Eric Hayter | Built with &lt3 | June 6th, 2021.
+      </p>
+    </footer>
+  </body>
 </html>
