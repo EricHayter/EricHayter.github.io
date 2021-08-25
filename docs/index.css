@@ -1,180 +1,222 @@
 html {
-    padding: 0px;
+  padding: 0px;
 }
 
 :root {
-    --ff-primary: 'Newsreader', serif;
+  --ff-primary: "Poppins", sans-serif;
+  --ff-secondary: "Open Sans", sans-serif;
 
-    --fw-regular: 300;
+  --fw-bold: 600;
+  --fw-regular: 300;
 
-    --clr-light: #fafafa;
-    --clr-dark: #000000;
-    
-    --fs-h1: 3rem;
-    --fs-h2: 2.25rem;
-    --fs-h3: 1.25rem;
-    --fs-body: 1rem;
+  --clr-light: #ffcdb2;
+  --clr-medium: #ffb4a2;
+  --clr-dark: #6d6875;
+  --clr-secondary-light: #e5989b;
+  --clr-secondary-dark: #b5838d;
+
+  --fs-h1: 3rem;
+  --fs-h2: 2.25rem;
+  --fs-h3: 1.25rem;
+  --fs-body: 1rem;
 }
 
 @media (min-width: 800px) {
-    :root {
-        --fs-h1: 4.5rem;
-        --fs-h2: 3.75rem; 
-        --fs-h3: 1.5rem;
-        --fs-body: 1.5rem;
-    }
+  :root {
+    --fs-h1: 4.5rem;
+    --fs-h2: 3.75rem;
+    --fs-h3: 1.5rem;
+    --fs-body: 1.5rem;
+  }
 }
 
 /* basic styling */
 body {
-    margin: 0;
-    padding: 0;
-    background-color:var(--clr-light);
-    color: var(--clr-dark);
-    font-family: var(--ff-primary);
-    font-size: var(--fs-body);
-    line-height: 1.6;
-
+  margin: 0;
+  padding: 0;
+  background-color: var(--clr-light);
+  color: var(--clr-dark);
+  font-family: var(--ff-primary);
+  font-size: var(--fs-body);
+  line-height: 1.6;
 }
 
 section {
-    max-width: 1400px;
-    margin: auto;
-    padding: 5em 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-img {
-    display: block;
-    max-width: 100%;
+.info-paragraph {
+  max-width: 65ch;
+}
+
+.spacer {
+  aspect-ratio: 960/200;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.wave1 {
+  background-image: url("content/wave-haikei.svg");
+}
+
+.wave2 {
+  background-image: url("content/wave-haikei2.svg");
+}
+
+.wave3 {
+  background-image: url("content/wave-haikei3.svg");
 }
 
 /* typography */
-h1 { font-size: var(--fs-h1) }
-h2 { font-size: var(--fs-h2) }
-h3 { font-size: var(--fs-h3)}
-p { font-size: var(--fs-body) }
+h1 {
+  font-size: var(--fs-h1);
+}
+h2 {
+  font-size: var(--fs-h2);
+}
+h3 {
+  font-size: var(--fs-h3);
+}
+p {
+  font-size: var(--fs-body);
+}
 
 h1,
 h2,
 h3 {
-    font-weight: var(--fw-regular);
+  font-weight: var(--fw-regular);
 }
 
 .section__title {
-    margin-bottom: 0.25em;
-    text-align: center;
+  margin-bottom: 0.25em;
+  text-align: center;
+  font-weight: var(--fw-bold);
 }
 
 .section__subtitle {
-    margin: 0;
-    font-size: var(--fs-h3);
+  margin: 0;
+  font-size: var(--fs-h3);
 }
-
 
 /* Nav Bar */
 nav {
-    position: sticky;
-    top: 0px;
-    color: var(--clr-light);
-    background-color: var(--clr-dark);
+  position: sticky;
+  top: 0px;
+  color: var(--clr-dark);
+  background-color: var(--clr-medium);
+  z-index: 2;
 }
 
 .nav--div {
-    margin: 0 auto;
-    width: max-content;
+  margin: 0 auto;
+  width: max-content;
 }
 
 .nav-link:link,
 .nav-link:visited,
 .nav-link:active {
-    text-decoration: none;
-    color: var(--clr-light);
-    padding: 0.3em 2em;
+  text-decoration: none;
+  color: var(--clr-dark);
+  padding: 0em 2em;
+  
 }
 
 .nav-link:hover {
-    text-decoration: none;
-    background-color: var(--clr-light);
-    color: var(--clr-dark);
-    padding: 0.3em 2em;
+  transition-duration: 0.75s;
+  text-decoration: none;
+  background-color: var(--clr-light);
+  color: var(--clr-dark);
+  border-radius: 15px;
 }
 
 /* Intro Section */
 #section__title--intro {
-    margin: auto;
-    padding: 5em 0em;
-    text-align: left;
-    width: max-content;
-    color: var(--clr-light);
+  margin: auto;
+  padding-top: 3em;
+  text-align: left;
+  width: max-content;
+  color: var(--clr-dark);
 }
 
-header {
-    background-image: url(content/lake2.jpg);
+.about-me {
+  background-color: var(--clr-medium);
+  color: var(--clr-dark);
 }
-
 
 /* My Project Section */
+.projects {
+  background-color: var(--clr-dark);
+  color: var(--clr-light);
+}
+
 .project-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .project-button {
-    text-decoration: none;
+  margin: 1rem;
+  display: grid;
+  place-items: center;
+  text-decoration: none;
+  width: 300px;
+  height: 300px;
+  background-color: var(--clr-secondary-light);
+  color: var(--clr-dark);
+  border-radius: 0.5em;
 }
 
-.project-thumbnail {
-    flex: 0 1 150px;
-    margin: 1rem;
-    width: 500px;
-    height: 500px;
-        display: grid;
-    place-items: center;
-    background-color: var(--clr-dark);
-    color: var(--clr-light);
-    border-radius: 0.5em;
+.project-button:hover {
+transition-duration: 0.75s;
+  box-shadow: 6px 6px var(--clr-secondary-dark);
+  -webkit-transform: translateX(-10px);
+  transform: translateX(-10px);
 }
-
-#ascii_bot { background-image: url(content/ascii_thumbnail.jpg); }
-
-
 
 /* Contact Me Section */
+.contact-me {
+  background-color: var(--clr-secondary-light);
+  color: var(--clr-dark);
+}
+
 .contact--button {
-    margin: 0 0.1em;
-    padding: 0.5em;
-    width: max-content;
-    background-color: var(--clr-dark);
-    color: var(--clr-light);
-    font-family: var(--ff-primary);
-    font-size: var(--fs-h3);
-    border-style: solid;
-    border-color: var(--clr-dark);
-    border-radius: 0.5em;
+  margin: 0em 0.1em 2em 0.1em;
+  padding: 0.5em;
+  width: max-content;
+  background-color: var(--clr-secondary-dark);
+  color: var(--clr-light);
+  font-family: var(--ff-primary);
+  font-size: var(--fs-h3);
+  border-style: solid;
+  border-color: transparent;
+  border-radius: 0.5em;
 }
 
 .contact--button:hover {
-    transform: scale(1.1);
-    color: var(--clr-dark);
-    background-color: var(--clr-light);
+  transition-duration: 0.75s;
+  color: var(--clr-dark);
+  background-color: var(--clr-light);
 }
 
 .button-container {
-    width: max-content;
-    margin: auto;
+  width: max-content;
+  margin: auto;
 }
-
 
 /* footer */
 footer {
-    background-color: var(--clr-dark);
-    padding: 0.25em;
+  background-color: var(--clr-medium);
+  padding: 0.25em;
 }
 
 #footer-text {
-    padding: 0;
-    color: var(--clr-light);
-    font-size: 0.5em;
-    text-align: center;
+  padding: 0;
+  color: var(--clr-dark);
+  font-size: 0.5em;
+  text-align: center;
 }
