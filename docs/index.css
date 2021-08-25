@@ -1,5 +1,6 @@
 html {
   padding: 0px;
+  scroll-behavior: smooth;
 }
 
 :root {
