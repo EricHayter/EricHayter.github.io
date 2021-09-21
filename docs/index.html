@@ -15,95 +15,98 @@
       rel="stylesheet"
     />
   </head>
-
-  <!-- Nav Bar -->
-  <nav>
-    <div class="nav--div">
-      <a class="nav-link" href="#about-me">About</a>
-      <a class="nav-link" href="#projects">My Projects</a>
-      <a class="nav-link" href="#contact">Contact Me</a>
-    </div>
-  </nav>
-
-  <!--Home Screen-->
-  <header>
-    <h1 class="section__title" id="section__title--intro">
-      Eric Hayter. <br />
-      coding enthusiast.
-    </h1>
-  </header>
-
-  <div class="spacer wave1"></div>
-
   <body>
-    <!--About Me Screen-->
-    <section class="about-me" id="about-me">
-      <h2 class="section__title section__title--about-me">About</h2>
-      <p class="info-paragraph">
-        I was born in Ajax, Ontario, and moved to Ottawa in 2018, and have been
-        living here ever since. I am currently in grade 12 at Sacred Heart High
-        School in Stittsville, Ontario. In my 10 year, on a whim, I decided to
-        swap my gym class out for an introductory course for computer science,
-        and it was love at first sight, as some may say. I also have other
-        hobbies outside of coding and programming including, playing jazz piano,
-        and long-distance running.
-      </p>
-    </section>
+    <div class="wrapper">
+        <!-- Nav Bar -->
+      <nav>
+        <div class="nav--div">
+          <a class="nav-link" href="#about-me">About</a>
+          <a class="nav-link" href="#projects">My Projects</a>
+          <a class="nav-link" href="#contact">Contact Me</a>
+        </div>
+      </nav>
 
-    <div class="spacer wave2"></div>
+      <!--Home Screen-->
+      <header>
+        <h2 class="section__title" id="section__title--intro">
+          Eric Hayter. <br />
+          coding enthusiast.
+        </h2>
+      </header>
 
-    <!--Projects Screen-->
-    <section class="projects" id="projects">
-      <h2 class="section__title">My Projects</h2>
-      <div class="project-container">
-        <a class="project-button" href="ascii_bot.html">
-          <h3 class="project-title">ASCII Bot</h3>
-        </a>
-        <a class="project-button" href="#">
-          <h3>Portfolio Website</h3>
-        </a>
-      </div>
-    </section>
+      <div class="spacer wave1"></div>
 
-    <div class="spacer wave3"></div>
+    
+      <!--About Me Screen-->
+      <section class="about-me" id="about-me">
+        <h2 class="section__title">About</h2>
+        <p class="info-paragraph">
+          I was born in Ajax, Ontario, and moved to Ottawa in 2018, and have been
+          living here ever since. I am currently in grade 12 at Sacred Heart High
+          School in Stittsville, Ontario. In my 10 year, on a whim, I decided to
+          swap my gym class out for an introductory course for computer science,
+          and it was love at first sight, as some may say. I also have other
+          hobbies outside of coding and programming including, playing jazz piano,
+          and long-distance running.
+        </p>
+      </section>
 
-    <!-- Contacts section -->
-    <script>
-      function copyContact(id, value) {
-        var copied = navigator.clipboard.writeText(value);
+      <div class="spacer wave2"></div>
 
-        /* Alert the copied text */
-        alert("copied " + id + " to clipboard.");
-      }
-    </script>
+      <!--Projects Screen-->
+      <section class="projects" id="projects">
+        <h2 class="section__title">My Projects</h2>
+        <div class="project-container">
+          <a class="project-button" href="ascii_bot.html">
+            <h3 class="project-title">ASCII Bot</h3>
+          </a>
+          <a class="project-button" href="#">
+            <h3>Portfolio Website</h3>
+          </a>
+        </div>
+      </section>
 
-    <section class="contact-me" id="contact">
-      <h2 class="section__title">Contacts</h2>
-      <div class="button-container">
-        <button
-          class="contact--button"
-          id="email"
-          value="hayter.eric@gmail.com"
-          onclick="copyContact(this.id, this.value)"
-        >
-          My Email
-        </button>
-        <button
-          class="contact--button"
-          id="github"
-          value="EricHayter"
-          onclick="copyContact(this.id, this.value)"
-        >
-          My Github
-        </button>
-      </div>
-    </section>
+      <div class="spacer wave3"></div>
 
-    <!-- Footer -->
-    <footer>
-      <p id="footer-text">
-        Copyrights © Eric Hayter | Built with &lt3 | June 6th, 2021.
-      </p>
-    </footer>
+      <!-- Contacts section -->
+      <script>
+        function copyContact(id, value) {
+          var copied = navigator.clipboard.writeText(value);
+
+          /* Alert the copied text */
+          alert("copied " + id + " to clipboard.");
+        }
+      </script>
+
+      <section class="contact-me" id="contact">
+        <h2 class="section__title">Contacts</h2>
+        <div class="button-container">
+          <button
+            class="contact--button"
+            id="email"
+            value="hayter.eric@gmail.com"
+            onclick="copyContact(this.id, this.value)"
+          >
+            My Email
+          </button>
+          <button
+            class="contact--button"
+            id="github"
+            value="EricHayter"
+            onclick="copyContact(this.id, this.value)"
+          >
+            My Github
+          </button>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer>
+        <p id="footer-text">
+          Copyrights © Eric Hayter | Built with &lt3 | June 6th, 2021.
+        </p>
+      </footer>
+    </div> 
+    
   </body>
 </html>
