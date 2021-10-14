@@ -72,34 +72,23 @@
       <div class="spacer wave3"></div>
 
       <!-- Contacts section -->
-      <script>
-        function copyContact(id, value) {
-          var copied = navigator.clipboard.writeText(value);
-
-          /* Alert the copied text */
-          alert("copied " + id + " to clipboard.");
-        }
-      </script>
-
       <section class="contact-me" id="contact">
         <h2 class="section__title">Contacts</h2>
         <div class="button-container">
-          <button
+          <a
             class="contact--button"
             id="email"
-            value="hayter.eric@gmail.com"
-            onclick="copyContact(this.id, this.value)"
+	    href="mailto: EricHayter@gmail.com"
           >
             My Email
-          </button>
-          <button
+          </a>
+          <a
             class="contact--button"
             id="github"
-            value="EricHayter"
-            onclick="copyContact(this.id, this.value)"
+	    href="github.com/EricHayter"
           >
             My Github
-          </button>
+          </a>
         </div>
       </section>
 
