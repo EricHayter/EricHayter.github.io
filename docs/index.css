@@ -129,7 +129,7 @@ nav {
   text-decoration: none;
   color: var(--clr-dark);
   padding: 0em 20px;
-  
+  transition: all 0.75s 
 }
 
 .nav-link:hover {
@@ -173,6 +173,7 @@ nav {
 }
 
 .project-button:hover {
+  animation-direction: alternate;
 transition-duration: 0.75s;
   box-shadow: 6px 6px var(--clr-secondary-dark);
   -webkit-transform: translateX(-10px);
@@ -186,7 +187,9 @@ transition-duration: 0.75s;
 }
 
 .contact--button {
-  margin: 0em 0.1em 2em 0.1em;
+  display: inline-block;
+  text-decoration: none;
+  margin: 0em 0.1em 1em 0.1em;
   padding: 0.5em;
   width: max-content;
   background-color: var(--clr-medium);
@@ -200,6 +203,7 @@ transition-duration: 0.75s;
 
 .contact--button:hover {
   transition-duration: 0.75s;
+  animation-direction: alternate;
   color: var(--clr-dark);
   background-color: var(--clr-light);
 }
