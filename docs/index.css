@@ -35,6 +35,7 @@ html {
   }
 }
 
+/*testing*/
 /* basic styling */
 body {
   margin: 0;
@@ -98,10 +99,14 @@ h3 {
 }
 
 .section__title {
-  margin: 2em auto 1em auto;
+  margin: 2em auto 0em auto;
   width: max-content;
   text-align: left;
   font-weight: var(--fw-bold);
+}
+
+#section__title--intro {
+  padding: 1.5em 0 1.5em 0
 }
 
 .section__subtitle {
@@ -189,7 +194,7 @@ transition-duration: 0.75s;
 .contact--button {
   display: inline-block;
   text-decoration: none;
-  margin: 0em 0.1em 1em 0.1em;
+  margin: 0em 0.1em 2em 0.1em;
   padding: 0.5em;
   width: max-content;
   background-color: var(--clr-medium);
