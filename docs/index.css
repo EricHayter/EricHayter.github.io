@@ -4,7 +4,7 @@ html {
 }
 
 .wrapper {
-  overflow-x:hidden;
+  overflow-x: hidden;
 }
 
 :root {
@@ -129,7 +129,6 @@ nav {
   text-decoration: none;
   color: var(--clr-dark);
   padding: 0em 20px;
-  
 }
 
 .nav-link:hover {
@@ -141,7 +140,6 @@ nav {
 }
 
 /* Intro Section */
-
 
 .about-me {
   background-color: var(--clr-medium);
@@ -173,7 +171,7 @@ nav {
 }
 
 .project-button:hover {
-transition-duration: 0.75s;
+  transition-duration: 0.75s;
   box-shadow: 6px 6px var(--clr-secondary-dark);
   -webkit-transform: translateX(-10px);
   transform: translateX(-10px);
@@ -227,6 +225,18 @@ footer {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+}
+
+.project-title {
+  margin: 2em auto 2em auto;
+  width: max-content;
+  text-align: left;
+}
+
+.project-page-title {
+  margin: 2em auto 0em auto;
+  width: max-content;
+  text-align: left;
 }
 
 .project-info {
