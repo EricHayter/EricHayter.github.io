@@ -33,6 +33,10 @@ html {
     --fs-h3: 1.5rem;
     --fs-body: 1.5rem;
   }
+  #nav-link {
+    width: 140px;
+    padding: 0 0.5em;
+  }
 }
 
 /* basic styling */
@@ -134,8 +138,8 @@ nav {
   display: inline-block;
   text-decoration: none;
   color: var(--clr-dark);
-  width: 80px;
-  padding: 0 0.25em;
+  width: 140px;
+  padding: 0 0.5em;
   text-align: center;
   transition: all 0.75s;
 }
@@ -147,17 +151,6 @@ nav {
   color: var(--clr-dark);
   border-radius: 15px;
 }
-
-
-@media (min-width: 800px) {
-  .nav-link:link,
-  .nav-link:visited,
-  .nav-link:active  {
-    width: 200px;
-    padding: 0 0.5em;
-  }
-}
-
 
 /* Intro Section */
 
