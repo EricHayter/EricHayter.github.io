@@ -282,5 +282,5 @@ footer {
     color: var(--clr-secondary-dark); 
     display: block;
     text-align: center;
-    margin: auto;
+    margin: 0 auto;
 }
