@@ -6,16 +6,8 @@ body,
   margin: 0;
 }
 
-.grid {
-  background-image:
-    repeating-linear-gradient(#ccc 0 1px, transparent 1px 100%),
-    repeating-linear-gradient(90deg, #ccc 0 1px, transparent 1px 100%);
-  background-size: 20px 20px;
-}
-
-.content {
+body {
   background-color: white;
-  outline: 1px solid #ccc;
   margin: auto;
   padding: 1em;
   max-width: 80ch;
@@ -27,7 +19,7 @@ body,
   padding: 5px;
   background-color: #eeffcc;
   color: #333333;
-  font-family: monospace;
+  font-family: Calibri;
   font-size: 12pt;
   font-weight: 600;
   line-height: 120%;
@@ -36,7 +28,7 @@ body,
 }
 
 * {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Calibri, serif;
 }
 
 h1 {
