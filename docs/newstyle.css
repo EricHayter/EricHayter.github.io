@@ -11,6 +11,7 @@ body {
   margin: auto;
   padding: 1em;
   max-width: 80ch;
+  min-height: 100%;
 }
 
 .code-snippet {
@@ -47,4 +48,12 @@ h2 {
 p, a {
   line-height: 20px;
   font-size: 16px;
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	text-align: center;
 }
