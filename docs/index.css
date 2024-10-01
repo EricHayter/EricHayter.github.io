@@ -20,7 +20,8 @@ main {
     background-color: rgb(32, 35, 36);
     min-height: 100%; /* Ensures the minimum height is 100% */
     height: auto; /* Allows the height to expand based on content */
-    width: 700px;
+	max-width: 700px;
+    width: 100%;
     margin: 20px 0;
     padding: 20px;
     box-sizing: border-box; /* Ensures padding is included in height/width calculation */
