@@ -23,6 +23,6 @@ def generate_html_for_images(directory):
             print(f'<figure><img src="content/{filename}" id="photo"><figcaption>[{image_date}].</figcaption></figure>')
 
 # Example usage
-directory = 'content/'  # Replace with your directory path
+directory = 'content/trip-photos/'  # Replace with your directory path
 generate_html_for_images(directory)
 
