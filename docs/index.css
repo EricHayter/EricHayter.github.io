@@ -42,6 +42,28 @@ figcaption {
 	color: rgb(200, 195, 188);
 }
 
+a {
+	color: #ff8c00; /* Orange color */
+	text-decoration: none; /* Remove underline */
+	transition: color 0.3s ease, border-bottom 0.3s ease; /* Smooth transition */
+    border-bottom: 2px solid transparent; /* Add transparent underline */
+	outline: none;
+}
+
+a:hover {
+	color: #ff4500; /* Darker orange on hover */
+	border-bottom: 2px solid #ff4500; /* Underline effect on hover */
+}
+
+a:active {
+	color: #e65c00; /* Slightly darker orange when active */
+}
+
+a:visited {
+	color: #cc7a00; /* Slightly different shade for visited links */
+}
+
+
 
 .container {
 	display: flex;
@@ -101,26 +123,6 @@ figcaption {
   align-items: center; /* Center items vertically */
 }.
 
-
-a {
-	color: #ff8c00; /* Orange color */
-	text-decoration: none; /* Remove underline */
-	transition: color 0.3s ease, border-bottom 0.3s ease; /* Smooth transition */
-    border-bottom: 2px solid transparent; /* Add transparent underline */
-}
-
-a:hover {
-	color: #ff4500; /* Darker orange on hover */
-	border-bottom: 2px solid #ff4500; /* Underline effect on hover */
-}
-
-a:active {
-	color: #e65c00; /* Slightly darker orange when active */
-}
-
-a:visited {
-	color: #cc7a00; /* Slightly different shade for visited links */
-}
 
 
 /* ANIMATION FOR PHOTO */
