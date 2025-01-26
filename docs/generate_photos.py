@@ -20,9 +20,9 @@ def generate_html_for_images(directory):
             image_date = get_image_date(file_path)
             
             # Print out the HTML block in one line
-            print(f'<figure><img src="content/{filename}" id="photo"><figcaption>[{image_date}].</figcaption></figure>')
+            print(f'<figure><img src="{directory}{filename}" id="photo"><figcaption>[{image_date}].</figcaption></figure>')
 
 # Example usage
-directory = 'content/trip-photos/'  # Replace with your directory path
+directory = 'assets/images/trip-photos/'  # Replace with your directory path
 generate_html_for_images(directory)
 
