@@ -92,6 +92,14 @@ figcaption {
 	display: block; /* Removes default inline spacing */
 }
 
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 16px; /* Adjust gap between items */
+  padding: 16px; /* Add padding around the grid */
+  justify-items: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+}.
 
 
 a {
