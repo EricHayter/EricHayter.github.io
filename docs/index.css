@@ -130,6 +130,7 @@ a:visited {
 }
 
 .figlet-title {
+	font-family: monospace, 'Courier New';
 	font-size: 10px;
 	width: fit-content;
 	margin: 0;
