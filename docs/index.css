@@ -130,8 +130,8 @@ a:visited {
 }
 
 .figlet-title {
-	font-family: monospace, 'Courier New';
-	font-size: 10px;
+  	font-family: "SF Mono", "Menlo", "Consolas", "Liberation Mono", "Courier New", monospace;
+	font-size: 9px;
 	width: fit-content;
 	margin: 0;
 }
