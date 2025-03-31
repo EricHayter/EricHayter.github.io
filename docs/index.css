@@ -8,16 +8,13 @@ html {
 	color: white;
 }
 
-nav {
-	display: flex;
-	justify-content: center;
-	padding: 10px;
-	gap: 10px;
+body {
+	max-width: 100%;
 }
 
 main {
-	max-width: 900px;
-	width: 100%;
+	max-width: 100%;
+	width: 900px;
 	margin: 20px 0;
 	padding: 20px;
 	box-sizing: border-box; /* Ensures padding is included in height/width calculation */
