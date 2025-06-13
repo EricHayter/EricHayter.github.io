@@ -5,5 +5,5 @@ permalink: /contacts/
 ---
 
 [github](https://github.com/EricHayter)
-[linkedin](www.linkedin.com/in/eric-hayter)
+[linkedin](https://www.linkedin.com/in/eric-hayter/)
 
