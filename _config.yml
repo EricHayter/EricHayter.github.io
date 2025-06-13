@@ -1,0 +1,15 @@
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
+# Build settings
+theme: jekyll-theme-console
+style: light
+plugins:
+  - jekyll-feed
+header_pages:
+  - index.markdown
+  - projects.markdown
+  - bookshelf.markdown
+  - photos.html
+  - contacts.markdown
+

@@ -1,0 +1,16 @@
+---
+---
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 132px);
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.photo-grid img {
+  width: 128px;
+  height: 128px;
+  object-fit: cover;
+  max-width: none;
+  padding: 4px;
+}
