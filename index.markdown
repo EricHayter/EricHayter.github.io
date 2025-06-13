@@ -6,8 +6,8 @@ title: about
 layout: page
 ---
 
-# Hi my name is Eric Hayter
+Hi my name is Eric Hayter
 
 I'm a student at the University of Ottawa studying computer science and
-mathematics. I'm working on creating a relational database called yadb (Yet
-Another Database).
+mathematics. I'm working on creating a relational database called
+[yadb](https://github.com/EricHayter/yadb) (Yet Another Database).
