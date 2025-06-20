@@ -1,13 +1,13 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
 title: about
 layout: page
 ---
 
-Hi my name is Eric Hayter
+Hi, my name is Eric Hayter.
 
-I'm a student at the University of Ottawa studying computer science and
-mathematics. I'm working on creating a relational database called
-[yadb](https://github.com/EricHayter/yadb) (Yet Another Database).
+I'm a student at the University of Ottawa, studying Computer Science and Mathematics. I focus on systems programming and spend most of my time working in modern C++.
+
+I'm especially interested in databases, high-performance computing, and tackling complex, low-level problems. I enjoy building efficient systems from the ground up and learning how things work under the hood.
+
+Right now, I'm developing [yadb](https://github.com/EricHayter/yadb) (Yet Another Database), a relational database written in C++ designed to be simple, functional, and educational.
+
