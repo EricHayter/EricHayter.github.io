@@ -21,3 +21,5 @@ Some projects I've worked on:
 ![UI display of QNX RPM](/assets/images/demo-photos/output.png)
 - There's a few other projects on my [github](https://github.com/EricHayter)
 
+- **[CHIP8 emulator](https://github.com/EricHayter/CHIP8)**: An emulator for
+  chip 8 architecture to run games and other programs.

@@ -2,59 +2,21 @@
 title: photos
 layout: page
 permalink: /photos/
-images:
-- path: /assets/images/trip-photos/cuHacking.jpg
-- path: /assets/images/trip-photos/DSC01571.JPG
-- path: /assets/images/trip-photos/DSC01586.JPG
-- path: /assets/images/trip-photos/DSC01591.JPG
-- path: /assets/images/trip-photos/DSC01593.JPG
-- path: /assets/images/trip-photos/DSC01597.JPG
-- path: /assets/images/trip-photos/DSC01620.JPG
-- path: /assets/images/trip-photos/DSC01625.JPG
-- path: /assets/images/trip-photos/DSC01626.JPG
-- path: /assets/images/trip-photos/DSC01631.JPG
-- path: /assets/images/trip-photos/DSC01654.JPG
-- path: /assets/images/trip-photos/DSC01660.JPG
-- path: /assets/images/trip-photos/DSC01665.JPG
-- path: /assets/images/trip-photos/DSC01679.JPG
-- path: /assets/images/trip-photos/DSC01681.JPG
-- path: /assets/images/trip-photos/DSC01685.JPG
-- path: /assets/images/trip-photos/DSC01691.JPG
-- path: /assets/images/trip-photos/DSC01699.JPG
-- path: /assets/images/trip-photos/DSC01703.JPG
-- path: /assets/images/trip-photos/DSC01710.JPG
-- path: /assets/images/trip-photos/DSC01734.JPG
-- path: /assets/images/trip-photos/DSC01753.JPG
-- path: /assets/images/trip-photos/DSC01762.JPG
-- path: /assets/images/trip-photos/DSC01780.JPG
-- path: /assets/images/trip-photos/DSC01791.JPG
-- path: /assets/images/trip-photos/DSC01795.JPG
-- path: /assets/images/trip-photos/DSC01804.JPG
-- path: /assets/images/trip-photos/DSC01805.JPG
-- path: /assets/images/trip-photos/DSC01811.JPG
-- path: /assets/images/trip-photos/DSC01823.JPG
-- path: /assets/images/trip-photos/DSC01845.JPG
-- path: /assets/images/trip-photos/DSC01847.JPG
-- path: /assets/images/trip-photos/DSC01857.JPG
-- path: /assets/images/trip-photos/DSC01890.JPG
-- path: /assets/images/trip-photos/DSC01915.JPG
-- path: /assets/images/trip-photos/DSC01950.JPG
-- path: /assets/images/trip-photos/DSC01957.JPG
-- path: /assets/images/trip-photos/DSC01974.JPG
-- path: /assets/images/trip-photos/DSC01976.JPG
-- path: /assets/images/trip-photos/DSC02010.JPG
-- path: /assets/images/trip-photos/DSC02024.JPG
-- path: /assets/images/trip-photos/DSC02027.JPG
-- path: /assets/images/trip-photos/DSC02045.JPG
-- path: /assets/images/trip-photos/DSC02059.JPG
-- path: /assets/images/trip-photos/snowshoeing.jpg
 ---
 
 <link rel="stylesheet" href="{{ '/assets/css/photos.css' | relative_url }}">
 
 <p>Some photos from outside:</p>
 <div class="photo-grid">
-    {% for image in page.images %}
-    <img src="{{ image.path }}"/>
+    {% assign photos_dir = '/assets/images/trip-photos/' %}
+    {% for file in site.static_files %}
+        {% if file.path contains photos_dir %}
+            {% assign ext = file.extname | downcase %}
+            {% if ext == '.jpg' or ext == '.jpeg' or ext == '.png' or ext == '.webp' %}
+                <img src="{{ file.path | relative_url }}" alt="photo">
+            {% endif %}
+        {% endif %}
     {% endfor %}
 </div>
+
+
