@@ -1,0 +1,94 @@
+.portrait-content-container {
+  display: flex;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  align-items: center;
+}
+
+.portrait-column {
+  flex: 0 0 auto; /* Fixed width for portrait column */
+}
+
+.portrait-wrapper {
+  position: sticky;
+  top: 2rem; /* Sticky positioning for larger screens */
+}
+
+.portrait-image {
+  height: 100%;
+  max-height: 300px;
+  width: auto;
+  display: block;
+}
+
+.content-column {
+  flex: 1;
+  min-width: 0; /* Prevents flex item from overflowing */
+}
+
+.content-wrapper {
+  max-width: 100%;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .portrait-content-container {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1rem;
+  }
+
+  .portrait-column {
+    flex: none;
+    text-align: center;
+  }
+
+  .portrait-wrapper {
+    position: static; /* Remove sticky on mobile */
+  }
+
+  .portrait-image {
+    max-width: 200px; /* Smaller on mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .portrait-image {
+    max-width: 150px; /* Even smaller on very small screens */
+  }
+
+  .portrait-content-container {
+    padding: 0.5rem;
+  }
+}
+
+/* ANIMATION FOR PHOTO */
+/* Keyframes for twisting animation */
+@keyframes twist {
+	0% {
+		transform: rotate(0deg);
+	}
+	25% {
+		transform: rotate(-5deg);
+	}
+	50% {
+		transform: rotate(5deg);
+	}
+	75% {
+		transform: rotate(-5deg);
+	}
+	100% {
+		transform: rotate(0deg);
+	}
+}
+/* Style class for the image */
+.twist-on-hover {
+	display: inline-block;
+	transition: transform 0.3s ease-in-out;
+}
+.twist-on-hover:hover {
+	animation: twist 0.6s ease-in-out;
+}
