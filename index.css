@@ -1,0 +1,174 @@
+:root {
+    --border: dashed 1px rgba(0, 0, 0, 1);
+    --font-size: 13px
+}
+
+img {
+  max-width: 100%;   /* shrink to parent’s width if too big */
+  height: auto;      /* keep aspect ratio */
+  display: block;    /* removes extra whitespace under inline images */
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: var(--font-size);
+    max-width: 80ch;   /* keeps text readable */
+    margin: 0 auto;    /* centers it */
+}
+
+header {
+    margin-top: 25px;
+    margin-bottom: 10px;
+    border-top: var(--border);
+    border-bottom: var(--border);
+}
+
+footer {
+    border-top: var(--border);
+}
+
+nav ul {
+    margin: 12px;
+    list-style: none;      /* remove bullets */
+    display: flex;         /* lay items out in a row */
+    justify-content: flex-end; /* pushes items to the right */
+    gap: 1rem;             /* spacing between items */
+}
+
+.portrait-content-container {
+    display: flex;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    align-items: center;
+}
+
+.portrait-column {
+    flex: 0 0 auto; /* Fixed width for portrait column */
+}
+
+.portrait-wrapper {
+    position: sticky;
+    top: 2rem; /* Sticky positioning for larger screens */
+}
+
+.portrait-image {
+    height: 100%;
+    max-height: 300px;
+    width: auto;
+    display: block;
+}
+
+.content-column {
+    flex: 1;
+    min-width: 0; /* Prevents flex item from overflowing */
+}
+
+.content-wrapper {
+    max-width: 100%;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .portrait-content-container {
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 1rem;
+    }
+
+    .portrait-column {
+        flex: none;
+        text-align: center;
+    }
+
+    .portrait-wrapper {
+        position: static; /* Remove sticky on mobile */
+    }
+
+    .portrait-image {
+        max-width: 200px; /* Smaller on mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .portrait-image {
+        max-width: 150px; /* Even smaller on very small screens */
+    }
+
+    .portrait-content-container {
+        padding: 0.5rem;
+    }
+}
+
+/* ANIMATION FOR PHOTO */
+/* Keyframes for twisting animation */
+@keyframes twist {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(-5deg);
+    }
+    50% {
+        transform: rotate(5deg);
+    }
+    75% {
+        transform: rotate(-5deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+/* Style class for the image */
+.twist-on-hover {
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+}
+.twist-on-hover:hover {
+    animation: twist 0.6s ease-in-out;
+}
+
+
+/* Container that constrains the grid to 80ch width */
+.photo-grid-container {
+    max-width: 80ch;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* Grid layout for photos */
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
+    gap: 1rem;
+    width: 100%;
+}
+
+/* Individual photo styling */
+.photo-grid img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    display: block;
+}
+
+/* Optional: Add hover effect */
+.photo-grid img:hover {
+    opacity: 0.9;
+    transition: opacity 0.2s ease;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 600px) {
+    .photo-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 0.5rem;
+    }
+
+    .photo-grid-container {
+        padding: 0.5rem;
+    }
+}
