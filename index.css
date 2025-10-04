@@ -25,6 +25,8 @@ header {
 
 footer {
     border-top: var(--border);
+    margin-top: 10px;
+    margin-bottom: 25px;
 }
 
 nav ul {
