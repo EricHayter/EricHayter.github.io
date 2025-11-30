@@ -2,7 +2,43 @@
 <html lang="en">
     <head>
         <link rel="stylesheet" href="index.css">
-        <title>Projects - Eric Hayter </title>
+        <title>Photos - Eric Hayter </title>
+        <style>
+            /* Override default body width constraint for photos page */
+            body {
+                max-width: 100%;
+                padding: 0 1rem;
+            }
+
+            /* Override header to maintain center alignment */
+            header {
+                max-width: 80ch;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            /* Override footer to maintain center alignment */
+            footer {
+                max-width: 80ch;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            /* Allow photo grid to use full width */
+            main {
+                max-width: 100%;
+                padding: 0;
+            }
+
+            /* Maximize photos per row with smaller minimum size */
+            .photo-grid {
+                width: 95%;
+                grid-template-columns: repeat(auto-fill, minmax(255px, 1fr));
+                gap: 1rem;
+                padding: 0 1rem;
+                margin: 0 auto;
+            }
+        </style>
     </head>
     <body>
 
@@ -18,81 +54,87 @@
 
         <main>
             <div class="photo-grid">
-                <img src="./assets/images/trip-photos//cropped_cuHacking.jpg" alt="cropped_cuHacking.jpg">
-                <img src="./assets/images/trip-photos//cropped_DSC00050.JPG" alt="cropped_DSC00050.JPG">
-                <img src="./assets/images/trip-photos//cropped_DSC01631.JPG" alt="cropped_DSC01631.JPG">
-                <img src="./assets/images/trip-photos//cropped_DSC00173.JPG" alt="cropped_DSC00173.JPG">
-                <img src="./assets/images/trip-photos//cropped_DSC00034.JPG" alt="cropped_DSC00034.JPG">
-                <img src="./assets/images/trip-photos//cropped_DSC02010.JPG" alt="cropped_DSC02010.JPG">
-                <img src="./assets/images/trip-photos//cropped_DSC01805.JPG" alt="cropped_DSC01805.JPG">
-                <img src="./assets/images/trip-photos//cropped_DSC01660.JPG" alt="cropped_DSC01660.JPG">
-                <img src="./assets/images/trip-photos//cropped_DSC00171.JPG" alt="cropped_DSC00171.JPG">
-                <img src="./assets/images/trip-photos//cropped_DSC00146.JPG" alt="cropped_DSC00146.JPG">
-                <img src="./assets/images/trip-photos//cropped_DSC01571.JPG" alt="cropped_DSC01571.JPG">
-                <img src="./assets/images/trip-photos//cropped_DSC01976.JPG" alt="cropped_DSC01976.JPG">
-                <img src="./assets/images/trip-photos//cropped_DSC00105.JPG" alt="cropped_DSC00105.JPG">
-                <img src="./assets/images/trip-photos//cropped_DSC01762.JPG" alt="cropped_DSC01762.JPG">
-                <img src="./assets/images/trip-photos//cropped_DSC01699.JPG" alt="cropped_DSC01699.JPG">
-                <img src="./assets/images/trip-photos//cropped_DSC01753.JPG" alt="cropped_DSC01753.JPG">
-                <img src="./assets/images/trip-photos//cropped_DSC01703.JPG" alt="cropped_DSC01703.JPG">
-                <img src="./assets/images/trip-photos//cropped_DSC01691.JPG" alt="cropped_DSC01691.JPG">
-                <img src="./assets/images/trip-photos//cropped_photo(3).png" alt="cropped_photo(3).png">
-                <img src="./assets/images/trip-photos//cropped_DSC01811.JPG" alt="cropped_DSC01811.JPG">
-                <img src="./assets/images/trip-photos//cropped_DSC01845.JPG" alt="cropped_DSC01845.JPG">
-                <img src="./assets/images/trip-photos//cropped_DSC00135.JPG" alt="cropped_DSC00135.JPG">
-                <img src="./assets/images/trip-photos//cropped_DSC01847.JPG" alt="cropped_DSC01847.JPG">
-                <img src="./assets/images/trip-photos//cropped_DSC00076.JPG" alt="cropped_DSC00076.JPG">
                 <img src="./assets/images/trip-photos//cropped_DSC01780.JPG" alt="cropped_DSC01780.JPG">
-                <img src="./assets/images/trip-photos//cropped_DSC00143.JPG" alt="cropped_DSC00143.JPG">
-                <img src="./assets/images/trip-photos//cropped_DSC01626.JPG" alt="cropped_DSC01626.JPG">
-                <img src="./assets/images/trip-photos//cropped_DSC01957.JPG" alt="cropped_DSC01957.JPG">
-                <img src="./assets/images/trip-photos//cropped_photo(1).png" alt="cropped_photo(1).png">
-                <img src="./assets/images/trip-photos//cropped_DSC01890.JPG" alt="cropped_DSC01890.JPG">
-                <img src="./assets/images/trip-photos//cropped_DSC00131.JPG" alt="cropped_DSC00131.JPG">
-                <img src="./assets/images/trip-photos//cropped_DSC00104.JPG" alt="cropped_DSC00104.JPG">
-                <img src="./assets/images/trip-photos//cropped_DSC01734.JPG" alt="cropped_DSC01734.JPG">
-                <img src="./assets/images/trip-photos//cropped_DSC00132.JPG" alt="cropped_DSC00132.JPG">
-                <img src="./assets/images/trip-photos//cropped_DSC01823.JPG" alt="cropped_DSC01823.JPG">
-                <img src="./assets/images/trip-photos//cropped_DSC01795.JPG" alt="cropped_DSC01795.JPG">
-                <img src="./assets/images/trip-photos//cropped_DSC01915.JPG" alt="cropped_DSC01915.JPG">
-                <img src="./assets/images/trip-photos//cropped_DSC00138.JPG" alt="cropped_DSC00138.JPG">
-                <img src="./assets/images/trip-photos//cropped_DSC00071.JPG" alt="cropped_DSC00071.JPG">
-                <img src="./assets/images/trip-photos//cropped_DSC00117.JPG" alt="cropped_DSC00117.JPG">
-                <img src="./assets/images/trip-photos//cropped_DSC00028.JPG" alt="cropped_DSC00028.JPG">
-                <img src="./assets/images/trip-photos//cropped_DSC02024.JPG" alt="cropped_DSC02024.JPG">
-                <img src="./assets/images/trip-photos//cropped_DSC01681.JPG" alt="cropped_DSC01681.JPG">
-                <img src="./assets/images/trip-photos//cropped_DSC00137.JPG" alt="cropped_DSC00137.JPG">
-                <img src="./assets/images/trip-photos//cropped_DSC02059.JPG" alt="cropped_DSC02059.JPG">
-                <img src="./assets/images/trip-photos//cropped_DSC00023.JPG" alt="cropped_DSC00023.JPG">
-                <img src="./assets/images/trip-photos//cropped_DSC00164.JPG" alt="cropped_DSC00164.JPG">
-                <img src="./assets/images/trip-photos//cropped_DSC01685.JPG" alt="cropped_DSC01685.JPG">
-                <img src="./assets/images/trip-photos//cropped_DSC01593.JPG" alt="cropped_DSC01593.JPG">
-                <img src="./assets/images/trip-photos//cropped_DSC01654.JPG" alt="cropped_DSC01654.JPG">
-                <img src="./assets/images/trip-photos//cropped_DSC01974.JPG" alt="cropped_DSC01974.JPG">
-                <img src="./assets/images/trip-photos//cropped_DSC01950.JPG" alt="cropped_DSC01950.JPG">
-                <img src="./assets/images/trip-photos//cropped_DSC01791.JPG" alt="cropped_DSC01791.JPG">
-                <img src="./assets/images/trip-photos//cropped_DSC01679.JPG" alt="cropped_DSC01679.JPG">
-                <img src="./assets/images/trip-photos//cropped_snowshoeing.jpg" alt="cropped_snowshoeing.jpg">
-                <img src="./assets/images/trip-photos//cropped_DSC01586.JPG" alt="cropped_DSC01586.JPG">
-                <img src="./assets/images/trip-photos//cropped_photo.png" alt="cropped_photo.png">
-                <img src="./assets/images/trip-photos//cropped_DSC02045.JPG" alt="cropped_DSC02045.JPG">
-                <img src="./assets/images/trip-photos//cropped_photo(2).png" alt="cropped_photo(2).png">
-                <img src="./assets/images/trip-photos//cropped_DSC01620.JPG" alt="cropped_DSC01620.JPG">
-                <img src="./assets/images/trip-photos//cropped_DSC00037.JPG" alt="cropped_DSC00037.JPG">
-                <img src="./assets/images/trip-photos//cropped_DSC01857.JPG" alt="cropped_DSC01857.JPG">
                 <img src="./assets/images/trip-photos//cropped_DSC00033.JPG" alt="cropped_DSC00033.JPG">
-                <img src="./assets/images/trip-photos//cropped_DSC01591.JPG" alt="cropped_DSC01591.JPG">
-                <img src="./assets/images/trip-photos//cropped_DSC00052.JPG" alt="cropped_DSC00052.JPG">
-                <img src="./assets/images/trip-photos//cropped_DSC00070.JPG" alt="cropped_DSC00070.JPG">
-                <img src="./assets/images/trip-photos//cropped_DSC00103.JPG" alt="cropped_DSC00103.JPG">
-                <img src="./assets/images/trip-photos//cropped_DSC00111.JPG" alt="cropped_DSC00111.JPG">
-                <img src="./assets/images/trip-photos//cropped_DSC00141.JPG" alt="cropped_DSC00141.JPG">
+                <img src="./assets/images/trip-photos//cropped_DSC01845.JPG" alt="cropped_DSC01845.JPG">
+                <img src="./assets/images/trip-photos//cropped_DSC00131.JPG" alt="cropped_DSC00131.JPG">
+                <img src="./assets/images/trip-photos//cropped_DSC01699.JPG" alt="cropped_DSC01699.JPG">
+                <img src="./assets/images/trip-photos//cropped_DSC00050.JPG" alt="cropped_DSC00050.JPG">
+                <img src="./assets/images/trip-photos//cropped_DSC01593.JPG" alt="cropped_DSC01593.JPG">
+                <img src="./assets/images/trip-photos//cropped_DSC01626.JPG" alt="cropped_DSC01626.JPG">
+                <img src="./assets/images/trip-photos//cropped_DSC00220.JPG" alt="cropped_DSC00220.JPG">
+                <img src="./assets/images/trip-photos//cropped_photo(2).png" alt="cropped_photo(2).png">
+                <img src="./assets/images/trip-photos//cropped_DSC01811.JPG" alt="cropped_DSC01811.JPG">
                 <img src="./assets/images/trip-photos//cropped_DSC00079.JPG" alt="cropped_DSC00079.JPG">
-                <img src="./assets/images/trip-photos//cropped_DSC01625.JPG" alt="cropped_DSC01625.JPG">
+                <img src="./assets/images/trip-photos//cropped_DSC01957.JPG" alt="cropped_DSC01957.JPG">
+                <img src="./assets/images/trip-photos//cropped_DSC00141.JPG" alt="cropped_DSC00141.JPG">
                 <img src="./assets/images/trip-photos//cropped_DSC01665.JPG" alt="cropped_DSC01665.JPG">
-                <img src="./assets/images/trip-photos//cropped_DSC00004.JPG" alt="cropped_DSC00004.JPG">
+                <img src="./assets/images/trip-photos//cropped_DSC00070.JPG" alt="cropped_DSC00070.JPG">
+                <img src="./assets/images/trip-photos//cropped_DSC00146.JPG" alt="cropped_DSC00146.JPG">
+                <img src="./assets/images/trip-photos//cropped_DSC01734.JPG" alt="cropped_DSC01734.JPG">
                 <img src="./assets/images/trip-photos//cropped_DSC01597.JPG" alt="cropped_DSC01597.JPG">
+                <img src="./assets/images/trip-photos//cropped_DSC00023.JPG" alt="cropped_DSC00023.JPG">
+                <img src="./assets/images/trip-photos//cropped_DSC01915.JPG" alt="cropped_DSC01915.JPG">
+                <img src="./assets/images/trip-photos//cropped_DSC01795.JPG" alt="cropped_DSC01795.JPG">
+                <img src="./assets/images/trip-photos//cropped_DSC00138.JPG" alt="cropped_DSC00138.JPG">
+                <img src="./assets/images/trip-photos//cropped_DSC01805.JPG" alt="cropped_DSC01805.JPG">
+                <img src="./assets/images/trip-photos//cropped_photo.png" alt="cropped_photo.png">
+                <img src="./assets/images/trip-photos//cropped_DSC01974.JPG" alt="cropped_DSC01974.JPG">
+                <img src="./assets/images/trip-photos//cropped_DSC00185.JPG" alt="cropped_DSC00185.JPG">
+                <img src="./assets/images/trip-photos//cropped_DSC00143.JPG" alt="cropped_DSC00143.JPG">
+                <img src="./assets/images/trip-photos//cropped_DSC01703.JPG" alt="cropped_DSC01703.JPG">
+                <img src="./assets/images/trip-photos//cropped_DSC01660.JPG" alt="cropped_DSC01660.JPG">
+                <img src="./assets/images/trip-photos//cropped_DSC00104.JPG" alt="cropped_DSC00104.JPG">
+                <img src="./assets/images/trip-photos//cropped_DSC01625.JPG" alt="cropped_DSC01625.JPG">
+                <img src="./assets/images/trip-photos//cropped_DSC00173.JPG" alt="cropped_DSC00173.JPG">
+                <img src="./assets/images/trip-photos//cropped_DSC01762.JPG" alt="cropped_DSC01762.JPG">
+                <img src="./assets/images/trip-photos//cropped_DSC00259.JPG" alt="cropped_DSC00259.JPG">
+                <img src="./assets/images/trip-photos//cropped_DSC00028.JPG" alt="cropped_DSC00028.JPG">
+                <img src="./assets/images/trip-photos//cropped_DSC00164.JPG" alt="cropped_DSC00164.JPG">
+                <img src="./assets/images/trip-photos//cropped_DSC00117.JPG" alt="cropped_DSC00117.JPG">
+                <img src="./assets/images/trip-photos//cropped_DSC01753.JPG" alt="cropped_DSC01753.JPG">
+                <img src="./assets/images/trip-photos//cropped_DSC00249.JPG" alt="cropped_DSC00249.JPG">
+                <img src="./assets/images/trip-photos//cropped_DSC01620.JPG" alt="cropped_DSC01620.JPG">
+                <img src="./assets/images/trip-photos//cropped_DSC00052.JPG" alt="cropped_DSC00052.JPG">
+                <img src="./assets/images/trip-photos//cropped_DSC01976.JPG" alt="cropped_DSC01976.JPG">
+                <img src="./assets/images/trip-photos//cropped_DSC01857.JPG" alt="cropped_DSC01857.JPG">
+                <img src="./assets/images/trip-photos//cropped_photo(3).png" alt="cropped_photo(3).png">
+                <img src="./assets/images/trip-photos//cropped_DSC01691.JPG" alt="cropped_DSC01691.JPG">
+                <img src="./assets/images/trip-photos//cropped_DSC00034.JPG" alt="cropped_DSC00034.JPG">
+                <img src="./assets/images/trip-photos//cropped_DSC01654.JPG" alt="cropped_DSC01654.JPG">
+                <img src="./assets/images/trip-photos//cropped_DSC00111.JPG" alt="cropped_DSC00111.JPG">
+                <img src="./assets/images/trip-photos//cropped_DSC01586.JPG" alt="cropped_DSC01586.JPG">
+                <img src="./assets/images/trip-photos//cropped_DSC00135.JPG" alt="cropped_DSC00135.JPG">
+                <img src="./assets/images/trip-photos//cropped_DSC00076.JPG" alt="cropped_DSC00076.JPG">
+                <img src="./assets/images/trip-photos//cropped_cuHacking.jpg" alt="cropped_cuHacking.jpg">
+                <img src="./assets/images/trip-photos//cropped_DSC01950.JPG" alt="cropped_DSC01950.JPG">
+                <img src="./assets/images/trip-photos//cropped_DSC01890.JPG" alt="cropped_DSC01890.JPG">
+                <img src="./assets/images/trip-photos//cropped_DSC01791.JPG" alt="cropped_DSC01791.JPG">
+                <img src="./assets/images/trip-photos//cropped_DSC00247.JPG" alt="cropped_DSC00247.JPG">
+                <img src="./assets/images/trip-photos//cropped_DSC01823.JPG" alt="cropped_DSC01823.JPG">
+                <img src="./assets/images/trip-photos//cropped_DSC02045.JPG" alt="cropped_DSC02045.JPG">
+                <img src="./assets/images/trip-photos//cropped_DSC00037.JPG" alt="cropped_DSC00037.JPG">
+                <img src="./assets/images/trip-photos//cropped_DSC01685.JPG" alt="cropped_DSC01685.JPG">
+                <img src="./assets/images/trip-photos//cropped_DSC00132.JPG" alt="cropped_DSC00132.JPG">
+                <img src="./assets/images/trip-photos//cropped_DSC02024.JPG" alt="cropped_DSC02024.JPG">
+                <img src="./assets/images/trip-photos//cropped_DSC01847.JPG" alt="cropped_DSC01847.JPG">
+                <img src="./assets/images/trip-photos//cropped_DSC00105.JPG" alt="cropped_DSC00105.JPG">
                 <img src="./assets/images/trip-photos//cropped_DSC00018.JPG" alt="cropped_DSC00018.JPG">
+                <img src="./assets/images/trip-photos//cropped_DSC01631.JPG" alt="cropped_DSC01631.JPG">
+                <img src="./assets/images/trip-photos//cropped_DSC01571.JPG" alt="cropped_DSC01571.JPG">
+                <img src="./assets/images/trip-photos//cropped_snowshoeing.jpg" alt="cropped_snowshoeing.jpg">
+                <img src="./assets/images/trip-photos//cropped_DSC00103.JPG" alt="cropped_DSC00103.JPG">
+                <img src="./assets/images/trip-photos//cropped_DSC00004.JPG" alt="cropped_DSC00004.JPG">
+                <img src="./assets/images/trip-photos//cropped_DSC01679.JPG" alt="cropped_DSC01679.JPG">
+                <img src="./assets/images/trip-photos//cropped_DSC00071.JPG" alt="cropped_DSC00071.JPG">
+                <img src="./assets/images/trip-photos//cropped_DSC02010.JPG" alt="cropped_DSC02010.JPG">
+                <img src="./assets/images/trip-photos//cropped_DSC02059.JPG" alt="cropped_DSC02059.JPG">
+                <img src="./assets/images/trip-photos//cropped_DSC01591.JPG" alt="cropped_DSC01591.JPG">
+                <img src="./assets/images/trip-photos//cropped_DSC00137.JPG" alt="cropped_DSC00137.JPG">
+                <img src="./assets/images/trip-photos//cropped_DSC00654.jpg" alt="cropped_DSC00654.jpg">
+                <img src="./assets/images/trip-photos//cropped_DSC00171.JPG" alt="cropped_DSC00171.JPG">
+                <img src="./assets/images/trip-photos//cropped_DSC01681.JPG" alt="cropped_DSC01681.JPG">
+                <img src="./assets/images/trip-photos//cropped_photo(1).png" alt="cropped_photo(1).png">
             </div>
         </main>
 
