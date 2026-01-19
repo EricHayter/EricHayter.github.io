@@ -1,6 +1,25 @@
+/* Import JetBrains Mono for that hacker/terminal aesthetic */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600&display=swap');
+
 :root {
-    --border: dashed 1px rgba(0, 0, 0, 1);
-    --font-size: 13px
+    /* Hacker aesthetic color palette with cyberpunk purple */
+    --color-primary: #0a0a0a;
+    --color-secondary: #404040;
+    --color-accent: #a855f7;
+    --color-accent-alt: #9333ea;
+    --color-background: #fafafa;
+    --color-text: #1a1a1a;
+    --color-text-muted: #666666;
+    --color-border: #333333;
+
+    /* Terminal-inspired typography */
+    --font-size-base: 13px;
+    --font-size-lg: 15px;
+    --font-size-sm: 12px;
+
+    /* Dashed border for that ASCII/terminal feel */
+    --border: dashed 1px var(--color-border);
+    --border-solid: solid 1px var(--color-border);
 }
 
 img {
@@ -10,74 +29,160 @@ img {
 }
 
 body {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: var(--font-size);
-    max-width: 80ch;   /* keeps text readable */
-    margin: 0 auto;    /* centers it */
+    font-family: 'JetBrains Mono', 'Courier New', monospace;
+    font-size: var(--font-size-base);
+    line-height: 1.65;
+    color: var(--color-text);
+    background-color: var(--color-background);
+    max-width: 80ch;
+    margin: 0 auto;
+    padding: 0 1rem;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Terminal-inspired typography */
+h3 {
+    font-size: 1.15rem;
+    font-weight: 500;
+    color: var(--color-primary);
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.4;
+    letter-spacing: -0.01em;
+}
+
+h3::before {
+    content: "$ ";
+    color: var(--color-accent);
+    font-weight: 400;
+}
+
+p {
+    margin-bottom: 1rem;
+    color: var(--color-text);
+}
+
+a {
+    color: var(--color-accent);
+    text-decoration: none;
+    transition: color 0.15s ease-out, text-shadow 0.15s ease-out;
+    cursor: pointer;
+}
+
+a:hover {
+    color: var(--color-accent-alt);
+    text-shadow: 0 0 8px rgba(168, 85, 247, 0.3);
 }
 
 header {
-    margin-top: 25px;
-    margin-bottom: 10px;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
     border-top: var(--border);
     border-bottom: var(--border);
 }
 
 footer {
     border-top: var(--border);
-    margin-top: 10px;
-    margin-bottom: 25px;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
 }
 
 nav ul {
-    margin: 12px;
-    list-style: none;      /* remove bullets */
-    display: flex;         /* lay items out in a row */
-    justify-content: flex-end; /* pushes items to the right */
-    gap: 1rem;             /* spacing between items */
+    margin: 0.75rem 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1.25rem;
 }
 
+nav li::before {
+    content: "[";
+    color: var(--color-border);
+    margin-right: 0.15em;
+}
+
+nav li::after {
+    content: "]";
+    color: var(--color-border);
+    margin-left: 0.15em;
+}
+
+nav a {
+    font-size: var(--font-size-base);
+    font-weight: 400;
+    letter-spacing: 0;
+    text-transform: lowercase;
+    color: var(--color-secondary);
+    transition: color 0.15s ease-out;
+}
+
+nav a:hover {
+    color: var(--color-accent);
+    text-shadow: none;
+}
+
+/* PORTRAIT AND CONTENT LAYOUT */
 .portrait-content-container {
     display: flex;
-    gap: 2rem;
+    gap: 3rem;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 2rem;
-    align-items: center;
+    padding: 2rem 0;
+    align-items: flex-start;
 }
 
 .portrait-column {
-    flex: 0 0 auto; /* Fixed width for portrait column */
+    flex: 0 0 auto;
 }
 
 .portrait-wrapper {
     position: sticky;
-    top: 2rem; /* Sticky positioning for larger screens */
+    top: 2rem;
 }
 
 .portrait-image {
     height: 100%;
-    max-height: 300px;
+    max-height: 280px;
     width: auto;
     display: block;
 }
 
 .content-column {
     flex: 1;
-    min-width: 0; /* Prevents flex item from overflowing */
+    min-width: 0;
 }
 
 .content-wrapper {
     max-width: 100%;
 }
 
+.content-wrapper ul {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+    list-style-type: disc;
+}
 
-/* Responsive Design */
+.content-wrapper li {
+    margin-bottom: 0.75rem;
+    color: var(--color-text);
+    line-height: 1.6;
+}
+
+
+/* RESPONSIVE DESIGN */
 @media (max-width: 768px) {
+    body {
+        font-size: 15px;
+    }
+
     .portrait-content-container {
         flex-direction: column;
-        gap: 1.5rem;
-        padding: 1rem;
+        gap: 2rem;
+        padding: 1.5rem 0;
+        align-items: center;
     }
 
     .portrait-column {
@@ -86,61 +191,108 @@ nav ul {
     }
 
     .portrait-wrapper {
-        position: static; /* Remove sticky on mobile */
+        position: static;
     }
 
     .portrait-image {
-        max-width: 200px; /* Smaller on mobile */
+        max-width: 200px;
+        max-height: 200px;
+    }
+
+    header {
+        margin-top: 1.5rem;
+    }
+
+    nav ul {
+        justify-content: center;
+        gap: 1.25rem;
     }
 }
 
 @media (max-width: 480px) {
     .portrait-image {
-        max-width: 150px; /* Even smaller on very small screens */
+        max-width: 160px;
+        max-height: 160px;
     }
 
-    .portrait-content-container {
-        padding: 0.5rem;
+    h3 {
+        font-size: 1.15rem;
     }
 }
 
-/* ANIMATION FOR PHOTO */
-/* Keyframes for twisting animation */
-@keyframes twist {
+/* TERMINAL CURSOR ANIMATION */
+@keyframes blink-cursor {
+    0%, 49% {
+        opacity: 1;
+    }
+    50%, 100% {
+        opacity: 0;
+    }
+}
+
+.terminal-cursor::after {
+    content: "▊";
+    color: var(--color-accent);
+    animation: blink-cursor 1s step-end infinite;
+    margin-left: 0.1em;
+}
+
+/* PORTRAIT ANIMATION - subtle glitch effect */
+@keyframes subtle-twist {
     0% {
         transform: rotate(0deg);
     }
     25% {
-        transform: rotate(-5deg);
+        transform: rotate(-2deg);
     }
     50% {
-        transform: rotate(5deg);
+        transform: rotate(2deg);
     }
     75% {
-        transform: rotate(-5deg);
+        transform: rotate(-2deg);
     }
     100% {
         transform: rotate(0deg);
     }
 }
-/* Style class for the image */
+
 .twist-on-hover {
     display: inline-block;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-out, opacity 0.2s ease-out, filter 0.2s ease-out;
+    cursor: pointer;
+    filter: grayscale(0%);
 }
+
 .twist-on-hover:hover {
-    animation: twist 0.6s ease-in-out;
+    animation: subtle-twist 0.5s ease-in-out;
+    opacity: 0.95;
+    filter: grayscale(20%);
+}
+
+/* Respect user's motion preferences for accessibility */
+@media (prefers-reduced-motion: reduce) {
+    .twist-on-hover {
+        animation: none;
+        transition: opacity 0.2s ease-out;
+    }
+    .twist-on-hover:hover {
+        animation: none;
+        opacity: 0.9;
+    }
+    .terminal-cursor::after {
+        animation: none;
+        opacity: 1;
+    }
 }
 
 
-/* Container that constrains the grid to 80ch width */
+/* PHOTO GRID STYLES */
 .photo-grid-container {
     max-width: 80ch;
     margin: 0 auto;
-    padding: 1rem;
+    padding: 1.5rem 0;
 }
 
-/* Grid layout for photos */
 .photo-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
@@ -148,29 +300,41 @@ nav ul {
     width: 100%;
 }
 
-/* Individual photo styling */
 .photo-grid img {
     width: 100%;
     height: auto;
     aspect-ratio: 1 / 1;
     object-fit: cover;
     display: block;
+    transition: opacity 0.15s ease-out, filter 0.15s ease-out;
+    cursor: pointer;
+    filter: grayscale(0%);
 }
 
-/* Optional: Add hover effect */
 .photo-grid img:hover {
     opacity: 0.9;
-    transition: opacity 0.2s ease;
+    filter: grayscale(10%);
 }
 
-/* Responsive adjustments for smaller screens */
+/* Respect reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+    .photo-grid img {
+        transition: opacity 0.15s ease-out;
+    }
+    .photo-grid img:hover {
+        opacity: 0.9;
+        filter: grayscale(0%);
+    }
+}
+
+/* Photo grid responsive styles */
 @media (max-width: 600px) {
     .photo-grid {
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-        gap: 0.5rem;
+        gap: 0.75rem;
     }
 
     .photo-grid-container {
-        padding: 0.5rem;
+        padding: 1rem 0;
     }
 }
