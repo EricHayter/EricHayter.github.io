@@ -28,6 +28,10 @@ img {
   display: block;    /* removes extra whitespace under inline images */
 }
 
+html {
+    height: 100%;
+}
+
 body {
     font-family: 'JetBrains Mono', 'Courier New', monospace;
     font-size: var(--font-size-base);
@@ -40,6 +44,13 @@ body {
     font-weight: 400;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
 }
 
 /* Terminal-inspired typography */
@@ -86,7 +97,50 @@ header {
 footer {
     border-top: var(--border);
     margin-top: 3rem;
-    margin-bottom: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+/* GIF SHOWCASE */
+.gif-showcase {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 3rem;
+    flex-wrap: wrap;
+}
+
+.showcase-gif {
+    max-width: 100px;
+    height: auto;
+    display: block;
+}
+
+.footer-decoration {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 0.5rem 0 0 0;
+    flex-wrap: wrap;
+}
+
+.footer-gif {
+    max-width: 150px;
+    height: auto;
+    display: block;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-icon {
+    height: 20px;
+    width: auto;
+    display: block;
 }
 
 nav ul {
@@ -207,6 +261,19 @@ nav a:hover {
         justify-content: center;
         gap: 1.25rem;
     }
+
+    .gif-showcase {
+        gap: 1.5rem;
+        margin-top: 2rem;
+    }
+
+    .showcase-gif {
+        max-width: 80px;
+    }
+
+    .footer-gif {
+        max-width: 120px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -240,48 +307,41 @@ nav a:hover {
 /* PORTRAIT ANIMATION - subtle glitch effect */
 @keyframes subtle-twist {
     0% {
-        transform: rotate(0deg);
+        transform: rotate(5deg);
     }
     25% {
-        transform: rotate(-2deg);
+        transform: rotate(-7deg);
     }
     50% {
-        transform: rotate(2deg);
+        transform: rotate(10deg);
     }
     75% {
-        transform: rotate(-2deg);
+        transform: rotate(-8deg);
     }
     100% {
-        transform: rotate(0deg);
+        transform: rotate(4deg);
     }
 }
 
 .twist-on-hover {
     display: inline-block;
-    transition: transform 0.3s ease-out, opacity 0.2s ease-out, filter 0.2s ease-out;
     cursor: pointer;
-    filter: grayscale(0%);
 }
 
 .twist-on-hover:hover {
-    animation: subtle-twist 0.5s ease-in-out;
-    opacity: 0.95;
-    filter: grayscale(20%);
+    animation: subtle-twist 2s step-end infinite;
 }
 
 /* Respect user's motion preferences for accessibility */
 @media (prefers-reduced-motion: reduce) {
     .twist-on-hover {
         animation: none;
-        transition: opacity 0.2s ease-out;
     }
     .twist-on-hover:hover {
         animation: none;
-        opacity: 0.9;
     }
     .terminal-cursor::after {
         animation: none;
-        opacity: 1;
     }
 }
 
