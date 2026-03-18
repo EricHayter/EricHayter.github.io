@@ -54,6 +54,23 @@ main {
 }
 
 /* Terminal-inspired typography */
+h2 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--color-accent);
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.3;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+}
+
+h2::before {
+    content: "## ";
+    color: var(--color-accent-alt);
+    font-weight: 400;
+}
+
 h3 {
     font-size: 1.15rem;
     font-weight: 500;
