@@ -242,6 +242,19 @@ nav a:hover {
     line-height: 1.6;
 }
 
+.db-highlight {
+    color: var(--color-accent);
+}
+
+.db-highlight a {
+    font-weight: 500;
+}
+
+.contact-nudge {
+    color: var(--color-text-muted);
+    margin-top: -0.5rem;
+}
+
 
 /* RESPONSIVE DESIGN */
 @media (max-width: 768px) {
