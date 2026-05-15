@@ -17,11 +17,24 @@
 
             .photo-grid {
                 width: 95%;
-                grid-template-columns: repeat(auto-fill, minmax(255px, 1fr));
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+                grid-auto-rows: 200px;
                 gap: 1rem;
                 padding: 0 1rem 2rem;
                 margin: 0 auto;
             }
+
+            .photo-grid img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                aspect-ratio: unset;
+            }
+
+            /* vary sizes: span 2 cols+rows = 2× bigger square */
+            .photo-grid img:nth-child(5n+1)  { grid-column: span 2; grid-row: span 2; }
+            .photo-grid img:nth-child(11n+4) { grid-column: span 2; grid-row: span 2; }
+            .photo-grid img:nth-child(17n+7) { grid-column: span 2; grid-row: span 2; }
         </style>
     </head>
     <body>
