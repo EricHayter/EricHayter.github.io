@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projects — Eric Hayter</title>
+  <meta name="description" content="Eric Hayter — systems programmer, CS & Math student at uOttawa." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+
+<!-- ============================================================
+     NAV
+============================================================ -->
+<nav class="nav">
+  <div class="container nav-inner">
+    <a class="nav-brand" href="index.html">
+      <svg width="22" height="22" viewBox="0 0 80 80">
+        <rect width="80" height="80" rx="14" fill="#0a0a0a"/>
+        <rect x="1" y="1" width="78" height="78" rx="13" fill="none" stroke="#2a2a2a"/>
+        <text x="40" y="52" text-anchor="middle" font-family="JetBrains Mono,monospace"
+              font-weight="600" font-size="36" letter-spacing="-0.02em" fill="#f5f5f5">eh</text>
+        <rect x="62" y="22" width="6" height="32" fill="#34d399"/>
+      </svg>
+      <span class="nav-brand-text">eric.hayter</span>
+    </a>
+    <div class="nav-links">
+      <a class="nav-link" href="index.html">about</a>
+      <a class="nav-link" data-active="true" href="projects.html">projects</a>
+      <a class="nav-link" href="writing.html">writing</a>
+      <a class="nav-link" href="cv.html">cv</a>
+      <a class="nav-link" href="contact.html">contact</a>
+    </div>
+    <div class="nav-spacer"></div>
+    <span class="nav-meta">Ottawa, ON</span>
+  </div>
+</nav>
+
+<main>
+
+<!-- ============================================================
+     WORK
+============================================================ -->
+<section id="work" class="screen">
+  <div class="section">
+    <div class="container">
+      <header class="section-head">
+        <div class="eyebrow">PROJECTS</div>
+        <h2 class="t-h2" style="margin-top:4px;">Projects and contributions.</h2>
+        <p class="t-lead" style="margin-top:8px;max-width:600px;">Toy systems built to understand real ones, plus open source work I've shipped.</p>
+        <a class="btn btn-secondary" href="https://github.com/EricHayter" target="_blank" style="margin-top:16px;align-self:flex-start;">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+          View my GitHub profile
+        </a>
+      </header>
+
+      <!-- Open Source -->
+      <div class="eyebrow" style="margin-top:48px;margin-bottom:16px;padding-bottom:8px;border-bottom:1px solid var(--border);">OPEN SOURCE</div>
+      <!-- PR-LOG-START -->
+      <div class="pr-log">
+        <div class="pr-entry">
+          <img class="co-icon" src="assets/logos/dragonflydb_logo.jpeg" alt="DragonflyDB" style="align-self:center;" />
+          <a class="pr-num" href="https://github.com/dragonflydb/dragonfly/pull/7069" target="_blank">#7069</a>
+          <span class="pr-blurb">Exposed replication link status, sync progress, and replica offset via the <code>/metrics</code> endpoint for Prometheus-based alerting.</span>
+        </div>
+        <div class="pr-entry">
+          <img class="co-icon" src="assets/logos/dragonflydb_logo.jpeg" alt="DragonflyDB" style="align-self:center;" />
+          <a class="pr-num" href="https://github.com/dragonflydb/dragonfly/pull/5944" target="_blank">#5944</a>
+          <span class="pr-blurb">Redesigned the RDB serialization format for scalable bloom filters to remove a hard 256 MB cap by segmenting filter data into variable-size chunks.</span>
+        </div>
+        <div class="pr-entry">
+          <img class="co-icon" src="assets/logos/dragonflydb_logo.jpeg" alt="DragonflyDB" style="align-self:center;" />
+          <a class="pr-num" href="https://github.com/dragonflydb/dragonfly/pull/5726" target="_blank">#5726</a>
+          <span class="pr-blurb">Implemented <code>GEORADIUSBYMEMBER_RO</code> — read-only geospatial radius query by member name.</span>
+        </div>
+        <div class="pr-entry">
+          <img class="co-icon" src="assets/logos/dragonflydb_logo.jpeg" alt="DragonflyDB" style="align-self:center;" />
+          <a class="pr-num" href="https://github.com/dragonflydb/dragonfly/pull/5678" target="_blank">#5678</a>
+          <span class="pr-blurb">Implemented <code>GEORADIUS_RO</code> — read-only geospatial radius query by coordinate.</span>
+        </div>
+        <div class="pr-entry">
+          <img class="co-icon" src="assets/logos/dragonflydb_logo.jpeg" alt="DragonflyDB" style="align-self:center;" />
+          <a class="pr-num" href="https://github.com/dragonflydb/dragonfly/pull/5503" target="_blank">#5503</a>
+          <span class="pr-blurb">Corrected <code>BLMPOP</code> journaling behaviour and option parsing to match Redis semantics.</span>
+        </div>
+        <div class="pr-entry">
+          <img class="co-icon" src="assets/logos/dragonflydb_logo.jpeg" alt="DragonflyDB" style="align-self:center;" />
+          <a class="pr-num" href="https://github.com/dragonflydb/dragonfly/pull/5370" target="_blank">#5370</a>
+          <span class="pr-blurb">Added <code>BLMPOP</code> — blocking-pop across multiple lists with timeout and count support.</span>
+        </div>
+        <div class="pr-entry">
+          <img class="co-icon" src="assets/logos/mariadb_logo.jpeg" alt="MariaDB" style="align-self:center;" />
+          <a class="pr-num" href="https://github.com/MariaDB/server/pull/4720" target="_blank">#4720</a>
+          <span class="pr-blurb">Refactored <code>Optional_metadata_fields</code> to replace parallel <code>std::vector</code> columns with a <code>Column_metadata</code> struct, consolidating per-column binlog metadata and simplifying charset handling.</span>
+        </div>
+      </div>
+      <!-- PR-LOG-END -->
+
+      <!-- Personal Projects -->
+      <div class="eyebrow" style="margin-top:48px;margin-bottom:16px;padding-bottom:8px;border-bottom:1px solid var(--border);">PERSONAL PROJECTS</div>
+      <div class="work-grid">
+        <!-- YADB card -->
+        <a class="project-card card-base" href="project-yadb.html">
+          <div style="display:flex;justify-content:space-between;align-items:flex-start;">
+            <span class="t-mono" style="font-size:10px;color:var(--fg-4);letter-spacing:0.1em;">2024</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--fg-5)" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+          </div>
+          <div>
+            <div class="project-card-name">yadb</div>
+            <p class="project-card-blurb">A relational database engine built from scratch. Bison/Flex SQL parser, Volcano-model executor (FileScan, Projection, Selection, HashJoin), slotted-page storage with LRU-K buffer pool and async disk I/O.</p>
+          </div>
+          <div style="display:flex;gap:6px;flex-wrap:wrap;margin-top:auto;">
+            <span class="tag tag-dim">C++20</span>
+            <span class="tag tag-dim">SQL</span>
+            <span class="tag tag-dim">STORAGE</span>
+            <span class="tag tag-success"><span class="dot"></span>active</span>
+          </div>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============================================================
+     FOOTER
+============================================================ -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div style="display:flex;flex-direction:column;gap:14px;">
+      <svg width="28" height="28" viewBox="0 0 80 80">
+        <rect width="80" height="80" rx="14" fill="#0a0a0a"/>
+        <rect x="1" y="1" width="78" height="78" rx="13" fill="none" stroke="#2a2a2a"/>
+        <text x="40" y="52" text-anchor="middle" font-family="JetBrains Mono,monospace"
+              font-weight="600" font-size="36" letter-spacing="-0.02em" fill="#f5f5f5">eh</text>
+        <rect x="62" y="22" width="6" height="32" fill="#34d399"/>
+      </svg>
+      <div class="footer-meta">
+        eric hayter · ottawa, ON<br/>
+        cs &amp; mathematics · uOttawa<br/>
+        updated 2026.05
+      </div>
+    </div>
+    <div style="display:flex;gap:40px;">
+      <div style="display:flex;flex-direction:column;gap:8px;">
+        <div class="eyebrow">find</div>
+        <a href="https://github.com/EricHayter" target="_blank" rel="noopener" class="footer-link">github ↗</a>
+        <a href="mailto:hayter.eric@gmail.com" class="footer-link">email ↗</a>
+        <a href="https://linkedin.com/in/eric-hayter" target="_blank" rel="noopener" class="footer-link">linkedin ↗</a>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:8px;">
+        <div class="eyebrow">read</div>
+        <a href="writing.html" class="footer-link">writing</a>
+        <a href="cv.html" class="footer-link">cv</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

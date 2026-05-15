@@ -2,72 +2,139 @@
 <html lang="en">
     <head>
         <link rel="stylesheet" href="index.css">
-        <title>Home - Eric Hayter</title>
+        <title>Eric Hayter</title>
+        <style>
+            body {
+                max-width: 100%;
+                padding: 0;
+            }
+
+            .about-section {
+                max-width: 72ch;
+                margin: 0 auto;
+                padding: 3rem 1.5rem 2rem;
+            }
+
+            .photo-grid {
+                width: 95%;
+                grid-template-columns: repeat(auto-fill, minmax(255px, 1fr));
+                gap: 1rem;
+                padding: 0 1rem 2rem;
+                margin: 0 auto;
+            }
+        </style>
     </head>
     <body>
-        <header>
-            <nav>
-                <img src="./assets/gifs/computer.gif" alt="Computer" class="nav-icon">
-                <ul>
-                    <li><a href="index.html">home</a></li>
-                    <li><a href="projects.html">projects</a></li>
-                    <li><a href="oss.html">oss</a></li>
-                    <li><a href="photos.html">photos</a></li>
-                </ul>
-            </nav>
-        </header>
         <main>
-            <!-- Two-column layout for portrait and main content -->
-            <div class="portrait-content-container">
-                <!-- Portrait Column -->
-                <div class="portrait-column">
-                    <div class="portrait-wrapper">
-                        <img src="./assets/images/site/me.png" alt="Eric Hayter" class="portrait-image twist-on-hover">
+            <div class="about-section">
+                <div class="portrait-content-container">
+                    <div class="portrait-column">
+                        <div class="portrait-wrapper">
+                            <img src="./assets/images/site/me.png" alt="Eric Hayter" class="portrait-image twist-on-hover">
+                        </div>
                     </div>
-                </div>
-                <!-- Main Content Column -->
-                <div class="content-column">
-                    <div class="content-wrapper">
-                        <p class="terminal-cursor">
-                            I'm a student at the University of Ottawa, studying Computer Science and Mathematics.
-                        </p>
-                        <p>
-                            Things I'm involved with and areas of interest:
-                        </p>
-                        <ul>
-                            <li class="db-highlight">
-                                Building <a href="https://github.com/EricHayter/yadb">yadb</a> as a project to learn more about database internals.
-                            </li>
-                            <li>
-                                Contributing to (mostly database related) <a href="oss.html">open source</a> projects.
-                            </li>
-                            <li>
-                                Exploring the outdoors (I know, very cliché) and taking <a href="photos.html">photos</a> along the way.
-                            </li>
-                        </ul>
-                        <p>
-                            <a href="https://github.com/EricHayter">erichayter</a> on GitHub.
-                            <br>
-                            Email: <a href="mailto:hayter.eric@gmail.com">hayter.eric@gmail.com</a>
-                        </p>
-                        <p class="contact-nudge">
-                            Feel free to reach out - I'm always happy to chat! :)
-                        </p>
+                    <div class="content-column">
+                        <div class="content-wrapper">
+                            <p class="terminal-cursor">
+                                Hi, I'm Eric. This is my personal site.
+                            </p>
+                            <p>
+                                If you're here for business or development stuff, check out <a href="https://erichayter.com">erichayter.com</a>.
+                                This site is just for personal things.
+                            </p>
+                            <div class="gif-showcase" style="justify-content:flex-start;margin-top:1rem;">
+                                <img src="./assets/gifs/kirby-vibing.gif" alt="Kirby vibing" class="showcase-gif">
+                                <img src="./assets/gifs/planet.gif" alt="Planet" class="showcase-gif">
+                                <img src="./assets/gifs/polar-bear.gif" alt="Polar bear" class="showcase-gif">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="gif-showcase">
-                <img src="./assets/gifs/kirby-vibing.gif" alt="Kirby vibing" class="showcase-gif">
-                <img src="./assets/gifs/planet.gif" alt="Planet" class="showcase-gif">
-                <img src="./assets/gifs/polar-bear.gif" alt="Polar bear" class="showcase-gif">
+
+            <div class="photo-grid">
+                <img src="./assets/images/trip-photos//cropped_DSC01780.JPG" alt="">
+                <img src="./assets/images/trip-photos//cropped_DSC00033.JPG" alt="">
+                <img src="./assets/images/trip-photos//cropped_DSC01845.JPG" alt="">
+                <img src="./assets/images/trip-photos//cropped_DSC00131.JPG" alt="">
+                <img src="./assets/images/trip-photos//cropped_DSC01699.JPG" alt="">
+                <img src="./assets/images/trip-photos//cropped_DSC00050.JPG" alt="">
+                <img src="./assets/images/trip-photos//cropped_DSC01593.JPG" alt="">
+                <img src="./assets/images/trip-photos//cropped_DSC01626.JPG" alt="">
+                <img src="./assets/images/trip-photos//cropped_DSC00220.JPG" alt="">
+                <img src="./assets/images/trip-photos//cropped_photo(2).png" alt="">
+                <img src="./assets/images/trip-photos//cropped_DSC01811.JPG" alt="">
+                <img src="./assets/images/trip-photos//cropped_DSC00079.JPG" alt="">
+                <img src="./assets/images/trip-photos//cropped_DSC01957.JPG" alt="">
+                <img src="./assets/images/trip-photos//cropped_DSC00141.JPG" alt="">
+                <img src="./assets/images/trip-photos//cropped_DSC01665.JPG" alt="">
+                <img src="./assets/images/trip-photos//cropped_DSC00070.JPG" alt="">
+                <img src="./assets/images/trip-photos//cropped_DSC00146.JPG" alt="">
+                <img src="./assets/images/trip-photos//cropped_DSC01734.JPG" alt="">
+                <img src="./assets/images/trip-photos//cropped_DSC01597.JPG" alt="">
+                <img src="./assets/images/trip-photos//cropped_DSC00023.JPG" alt="">
+                <img src="./assets/images/trip-photos//cropped_DSC01915.JPG" alt="">
+                <img src="./assets/images/trip-photos//cropped_DSC01795.JPG" alt="">
+                <img src="./assets/images/trip-photos//cropped_DSC00138.JPG" alt="">
+                <img src="./assets/images/trip-photos//cropped_DSC01805.JPG" alt="">
+                <img src="./assets/images/trip-photos//cropped_photo.png" alt="">
+                <img src="./assets/images/trip-photos//cropped_DSC01974.JPG" alt="">
+                <img src="./assets/images/trip-photos//cropped_DSC00185.JPG" alt="">
+                <img src="./assets/images/trip-photos//cropped_DSC00143.JPG" alt="">
+                <img src="./assets/images/trip-photos//cropped_DSC01703.JPG" alt="">
+                <img src="./assets/images/trip-photos//cropped_DSC01660.JPG" alt="">
+                <img src="./assets/images/trip-photos//cropped_DSC00104.JPG" alt="">
+                <img src="./assets/images/trip-photos//cropped_DSC01625.JPG" alt="">
+                <img src="./assets/images/trip-photos//cropped_DSC00173.JPG" alt="">
+                <img src="./assets/images/trip-photos//cropped_DSC01762.JPG" alt="">
+                <img src="./assets/images/trip-photos//cropped_DSC00259.JPG" alt="">
+                <img src="./assets/images/trip-photos//cropped_DSC00028.JPG" alt="">
+                <img src="./assets/images/trip-photos//cropped_DSC00164.JPG" alt="">
+                <img src="./assets/images/trip-photos//cropped_DSC00117.JPG" alt="">
+                <img src="./assets/images/trip-photos//cropped_DSC01753.JPG" alt="">
+                <img src="./assets/images/trip-photos//cropped_DSC00249.JPG" alt="">
+                <img src="./assets/images/trip-photos//cropped_DSC01620.JPG" alt="">
+                <img src="./assets/images/trip-photos//cropped_DSC00052.JPG" alt="">
+                <img src="./assets/images/trip-photos//cropped_DSC01976.JPG" alt="">
+                <img src="./assets/images/trip-photos//cropped_DSC01857.JPG" alt="">
+                <img src="./assets/images/trip-photos//cropped_photo(3).png" alt="">
+                <img src="./assets/images/trip-photos//cropped_DSC01691.JPG" alt="">
+                <img src="./assets/images/trip-photos//cropped_DSC00034.JPG" alt="">
+                <img src="./assets/images/trip-photos//cropped_DSC01654.JPG" alt="">
+                <img src="./assets/images/trip-photos//cropped_DSC00111.JPG" alt="">
+                <img src="./assets/images/trip-photos//cropped_DSC01586.JPG" alt="">
+                <img src="./assets/images/trip-photos//cropped_DSC00135.JPG" alt="">
+                <img src="./assets/images/trip-photos//cropped_DSC00076.JPG" alt="">
+                <img src="./assets/images/trip-photos//cropped_cuHacking.jpg" alt="">
+                <img src="./assets/images/trip-photos//cropped_DSC01950.JPG" alt="">
+                <img src="./assets/images/trip-photos//cropped_DSC01890.JPG" alt="">
+                <img src="./assets/images/trip-photos//cropped_DSC01791.JPG" alt="">
+                <img src="./assets/images/trip-photos//cropped_DSC00247.JPG" alt="">
+                <img src="./assets/images/trip-photos//cropped_DSC01823.JPG" alt="">
+                <img src="./assets/images/trip-photos//cropped_DSC02045.JPG" alt="">
+                <img src="./assets/images/trip-photos//cropped_DSC00037.JPG" alt="">
+                <img src="./assets/images/trip-photos//cropped_DSC01685.JPG" alt="">
+                <img src="./assets/images/trip-photos//cropped_DSC00132.JPG" alt="">
+                <img src="./assets/images/trip-photos//cropped_DSC02024.JPG" alt="">
+                <img src="./assets/images/trip-photos//cropped_DSC01847.JPG" alt="">
+                <img src="./assets/images/trip-photos//cropped_DSC00105.JPG" alt="">
+                <img src="./assets/images/trip-photos//cropped_DSC00018.JPG" alt="">
+                <img src="./assets/images/trip-photos//cropped_DSC01631.JPG" alt="">
+                <img src="./assets/images/trip-photos//cropped_DSC01571.JPG" alt="">
+                <img src="./assets/images/trip-photos//cropped_snowshoeing.jpg" alt="">
+                <img src="./assets/images/trip-photos//cropped_DSC00103.JPG" alt="">
+                <img src="./assets/images/trip-photos//cropped_DSC00004.JPG" alt="">
+                <img src="./assets/images/trip-photos//cropped_DSC01679.JPG" alt="">
+                <img src="./assets/images/trip-photos//cropped_DSC00071.JPG" alt="">
+                <img src="./assets/images/trip-photos//cropped_DSC02010.JPG" alt="">
+                <img src="./assets/images/trip-photos//cropped_DSC02059.JPG" alt="">
+                <img src="./assets/images/trip-photos//cropped_DSC01591.JPG" alt="">
+                <img src="./assets/images/trip-photos//cropped_DSC00137.JPG" alt="">
+                <img src="./assets/images/trip-photos//cropped_DSC00654.jpg" alt="">
+                <img src="./assets/images/trip-photos//cropped_DSC00171.JPG" alt="">
+                <img src="./assets/images/trip-photos//cropped_DSC01681.JPG" alt="">
+                <img src="./assets/images/trip-photos//cropped_photo(1).png" alt="">
             </div>
         </main>
-        <footer>
-            <div class="footer-decoration">
-                <img src="./assets/gifs/keep-smiling.gif" alt="Keep smiling" class="footer-gif">
-                <img src="./assets/gifs/love-my-computer.gif" alt="Love my computer" class="footer-gif">
-                <img src="./assets/gifs/under-construction.gif" alt="Under construction" class="footer-gif">
-            </div>
-        </footer>
     </body>
 </html>

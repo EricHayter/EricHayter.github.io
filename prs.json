@@ -1,0 +1,78 @@
+{
+  "author": "EricHayter",
+  "repos": {
+    "dragonflydb/dragonfly": {
+      "logo": "assets/logos/dragonflydb_logo.jpeg",
+      "alt": "DragonflyDB"
+    },
+    "MariaDB/server": {
+      "logo": "assets/logos/mariadb_logo.jpeg",
+      "alt": "MariaDB"
+    }
+  },
+  "prs": {
+    "dragonflydb/dragonfly#7069": {
+      "number": 7069,
+      "repo": "dragonflydb/dragonfly",
+      "url": "https://github.com/dragonflydb/dragonfly/pull/7069",
+      "mergedAt": "2026-04-18T00:00:00Z",
+      "createdAt": null,
+      "state": "MERGED",
+      "blurb": "Exposed replication link status, sync progress, and replica offset via the <code>/metrics</code> endpoint for Prometheus-based alerting."
+    },
+    "dragonflydb/dragonfly#5944": {
+      "number": 5944,
+      "repo": "dragonflydb/dragonfly",
+      "url": "https://github.com/dragonflydb/dragonfly/pull/5944",
+      "mergedAt": "2025-11-12T00:00:00Z",
+      "createdAt": null,
+      "state": "MERGED",
+      "blurb": "Redesigned the RDB serialization format for scalable bloom filters to remove a hard 256 MB cap by segmenting filter data into variable-size chunks."
+    },
+    "dragonflydb/dragonfly#5726": {
+      "number": 5726,
+      "repo": "dragonflydb/dragonfly",
+      "url": "https://github.com/dragonflydb/dragonfly/pull/5726",
+      "mergedAt": "2025-08-28T00:00:00Z",
+      "createdAt": null,
+      "state": "MERGED",
+      "blurb": "Implemented <code>GEORADIUSBYMEMBER_RO</code> — read-only geospatial radius query by member name."
+    },
+    "dragonflydb/dragonfly#5678": {
+      "number": 5678,
+      "repo": "dragonflydb/dragonfly",
+      "url": "https://github.com/dragonflydb/dragonfly/pull/5678",
+      "mergedAt": "2025-08-25T00:00:00Z",
+      "createdAt": null,
+      "state": "MERGED",
+      "blurb": "Implemented <code>GEORADIUS_RO</code> — read-only geospatial radius query by coordinate."
+    },
+    "dragonflydb/dragonfly#5503": {
+      "number": 5503,
+      "repo": "dragonflydb/dragonfly",
+      "url": "https://github.com/dragonflydb/dragonfly/pull/5503",
+      "mergedAt": "2025-07-15T00:00:00Z",
+      "createdAt": null,
+      "state": "MERGED",
+      "blurb": "Corrected <code>BLMPOP</code> journaling behaviour and option parsing to match Redis semantics."
+    },
+    "dragonflydb/dragonfly#5370": {
+      "number": 5370,
+      "repo": "dragonflydb/dragonfly",
+      "url": "https://github.com/dragonflydb/dragonfly/pull/5370",
+      "mergedAt": "2025-07-01T00:00:00Z",
+      "createdAt": null,
+      "state": "MERGED",
+      "blurb": "Added <code>BLMPOP</code> — blocking-pop across multiple lists with timeout and count support."
+    },
+    "MariaDB/server#4720": {
+      "number": 4720,
+      "repo": "MariaDB/server",
+      "url": "https://github.com/MariaDB/server/pull/4720",
+      "mergedAt": null,
+      "createdAt": "2025-11-01T00:00:00Z",
+      "state": "OPEN",
+      "blurb": "Refactored <code>Optional_metadata_fields</code> to replace parallel <code>std::vector</code> columns with a <code>Column_metadata</code> struct, consolidating per-column binlog metadata and simplifying charset handling."
+    }
+  }
+}
