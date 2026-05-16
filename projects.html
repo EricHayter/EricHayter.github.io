@@ -28,9 +28,7 @@
       <span class="nav-brand-text">eric.hayter</span>
     </a>
     <div class="nav-links">
-      <a class="nav-link" href="index.html">about</a>
-      <a class="nav-link" data-active="true" href="projects.html">projects</a>
-      <a class="nav-link" href="projects.html#open-source">open source</a>
+      <a class="nav-link" data-active="true" href="projects.html">open source</a>
       <a class="nav-link" href="writing.html">writing</a>
       <a class="nav-link" href="cv.html">cv</a>
       <a class="nav-link" href="contact.html">contact</a>
@@ -104,11 +102,9 @@
       <div class="eyebrow" style="margin-top:48px;margin-bottom:16px;padding-bottom:8px;border-bottom:1px solid var(--border);">PERSONAL PROJECTS</div>
       <div class="work-grid">
         <!-- YADB card -->
-        <a class="project-card card-base" href="project-yadb.html">
-          <div style="display:flex;justify-content:space-between;align-items:flex-start;">
-            <span class="t-mono" style="font-size:10px;color:var(--fg-4);letter-spacing:0.1em;">2024</span>
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--fg-5)" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
-          </div>
+        <div class="project-card card-base">
+          <img class="project-thumb" src="personal/assets/images/demo-photos/yadb_shell_demo.png" alt="YADB shell demo" />
+          <span class="t-mono" style="font-size:10px;color:var(--fg-4);letter-spacing:0.1em;">2024</span>
           <div>
             <div class="project-card-name">yadb</div>
             <p class="project-card-blurb">A relational database engine built from scratch. Bison/Flex SQL parser, Volcano-model executor (FileScan, Projection, Selection, HashJoin), slotted-page storage with LRU-K buffer pool and async disk I/O.</p>
@@ -119,7 +115,77 @@
             <span class="tag tag-dim">STORAGE</span>
             <span class="tag tag-success"><span class="dot"></span>active</span>
           </div>
-        </a>
+          <a class="project-link" href="https://github.com/EricHayter/yadb" target="_blank" rel="noopener"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>github ↗</a>
+        </div>
+
+        <!-- yakv card -->
+        <div class="project-card card-base">
+          <img class="project-thumb" src="https://github.com/EricHayter/yakv/blob/main/docs/client.png?raw=true" alt="YAKV client demo" />
+          <span class="t-mono" style="font-size:10px;color:var(--fg-4);letter-spacing:0.1em;">2025</span>
+          <div>
+            <div class="project-card-name">yakv</div>
+            <p class="project-card-blurb">Yet another key-value store — extends YADB experiments toward a different storage engine (LSM tree), write-ahead logging, and the Go programming language.</p>
+          </div>
+          <div style="display:flex;gap:6px;flex-wrap:wrap;margin-top:auto;">
+            <span class="tag tag-dim">Go</span>
+            <span class="tag tag-dim">LSM</span>
+            <span class="tag tag-dim">STORAGE</span>
+            <span class="tag tag-success"><span class="dot"></span>active</span>
+          </div>
+          <a class="project-link" href="https://github.com/EricHayter/yakv" target="_blank" rel="noopener"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>github ↗</a>
+        </div>
+
+        <!-- renderer2 card -->
+        <div class="project-card card-base">
+          <img class="project-thumb" src="https://raw.githubusercontent.com/EricHayter/renderer2/main/docs/demos/demo.gif" alt="renderer2 demo" />
+          <span class="t-mono" style="font-size:10px;color:var(--fg-4);letter-spacing:0.1em;">2025</span>
+          <div>
+            <div class="project-card-name">renderer2</div>
+            <p class="project-card-blurb">GPU-accelerated OpenGL 3.3 renderer supporting OBJ and glTF/GLB model formats, interactive camera controls, and real-time parameter tweaking with ImGui. Evolution of the software-only renderer below.</p>
+          </div>
+          <div style="display:flex;gap:6px;flex-wrap:wrap;margin-top:auto;">
+            <span class="tag tag-dim">C++</span>
+            <span class="tag tag-dim">OpenGL</span>
+            <span class="tag tag-dim">glTF</span>
+            <span class="tag tag-archived"><span class="dot"></span>archived</span>
+          </div>
+          <a class="project-link" href="https://github.com/EricHayter/renderer2" target="_blank" rel="noopener"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>github ↗</a>
+        </div>
+
+        <!-- renderer card -->
+        <div class="project-card card-base">
+          <img class="project-thumb" src="personal/assets/images/demo-photos/renderer.gif" alt="renderer demo" />
+          <span class="t-mono" style="font-size:10px;color:var(--fg-4);letter-spacing:0.1em;">2024</span>
+          <div>
+            <div class="project-card-name">renderer</div>
+            <p class="project-card-blurb">A software-rasterized .obj renderer — no graphics API, just SDL3 and math. Built to understand the rendering pipeline from scratch before moving to OpenGL.</p>
+          </div>
+          <div style="display:flex;gap:6px;flex-wrap:wrap;margin-top:auto;">
+            <span class="tag tag-dim">C++</span>
+            <span class="tag tag-dim">SDL3</span>
+            <span class="tag tag-archived"><span class="dot"></span>archived</span>
+          </div>
+          <a class="project-link" href="https://github.com/EricHayter/renderer" target="_blank" rel="noopener"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>github ↗</a>
+        </div>
+
+        <!-- mikado card -->
+        <div class="project-card card-base">
+          <img class="project-thumb" src="https://raw.githubusercontent.com/EricHayter/mikado/main/docs/images/demo.png" alt="mikado demo" />
+          <span class="t-mono" style="font-size:10px;color:var(--fg-4);letter-spacing:0.1em;">2025</span>
+          <div>
+            <div class="project-card-name">mikado</div>
+            <p class="project-card-blurb">Browser-based visual tool for the Mikado Method — plan and track code refactorings as a task dependency tree. Supports JSON import/export and localStorage persistence.</p>
+          </div>
+          <div style="display:flex;gap:6px;flex-wrap:wrap;margin-top:auto;">
+            <span class="tag tag-dim">TypeScript</span>
+            <span class="tag tag-dim">Web</span>
+            <span class="tag tag-archived"><span class="dot"></span>archived</span>
+          </div>
+          <div style="display:flex;gap:16px;">
+            <a class="project-link" href="https://github.com/EricHayter/mikado" target="_blank" rel="noopener"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>github ↗</a>
+            <a class="project-link" href="https://erichayter.github.io/mikado/" target="_blank" rel="noopener">live ↗</a>
+          </div>
+        </div>
       </div>
 
     </div>
@@ -158,6 +224,7 @@
         <div class="eyebrow">read</div>
         <a href="writing.html" class="footer-link">writing</a>
         <a href="cv.html" class="footer-link">cv</a>
+        <a href="personal/index.html" class="footer-link">personal ↗</a>
       </div>
     </div>
   </div>
