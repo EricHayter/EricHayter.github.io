@@ -1,0 +1,21 @@
+---
+layout: default
+title: Photos
+filepath: "~/eric/photos"
+permalink: /photos.html
+---
+
+<a class="back-link" href="/#photos">← back</a>
+
+<section id="photos">
+  <div class="seclabel">photos<span class="fill"></span></div>
+  <div class="photos photos-full">
+    {% for file in site.static_files %}
+      {% if file.path contains 'trip-photos' %}
+      <div class="ph">
+        <img src="{{ file.path }}" alt="" loading="lazy">
+      </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</section>

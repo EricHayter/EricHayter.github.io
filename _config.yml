@@ -1,0 +1,11 @@
+title: Eric Hayter
+url: https://erichayter.com
+baseurl: ""
+permalink: /writing/:year/:month/:day/:title/
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+exclude:
+  - sync-prs.py
+  - "*.py"

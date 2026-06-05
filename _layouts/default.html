@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title }} — Eric Hayter</title>
+  {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/index.css">
+</head>
+<body>
+  <div class="wrap">
+    <aside>
+      <button class="menubtn" id="menubtn">menu</button>
+      <nav id="nav">
+        <a href="/">index</a>
+        <a href="/#oss">open source</a>
+        <a href="/#projects">projects</a>
+        <a href="/#writing">writing</a>
+        <a href="/cv.html"{% if page.url == '/cv.html' %} class="active"{% endif %}>cv</a>
+        <a href="/contact.html"{% if page.url == '/contact.html' %} class="active"{% endif %}>contact</a>
+      </nav>
+      <div class="side-foot">
+        <a href="https://github.com/EricHayter" target="_blank" rel="noopener">github</a>
+        <a href="https://linkedin.com/in/eric-hayter" target="_blank" rel="noopener">linkedin</a>
+        <a href="mailto:hayter.eric@gmail.com">email</a>
+        <span class="side-stamp">Ottawa, ON</span>
+      </div>
+    </aside>
+
+    <main>
+      <div class="filehdr">
+        <span class="path">{{ page.filepath | default: "~/eric" }}</span>
+      </div>
+      {{ content }}
+    </main>
+  </div>
+
+  <script>
+    const nav = document.getElementById('nav'), mb = document.getElementById('menubtn');
+    mb && mb.addEventListener('click', () => nav.classList.toggle('show'));
+    nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => nav.classList.remove('show')));
+  </script>
+</body>
+</html>
