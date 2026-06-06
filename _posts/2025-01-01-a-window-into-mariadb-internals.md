@@ -2,6 +2,7 @@
 layout: post
 title: "A window into MariaDB internals"
 date: 2025-01-01
+published: false
 filepath: "~/eric/writing/mariadb-internals"
 ---
 
