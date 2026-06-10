@@ -194,7 +194,7 @@ section:first-of-type { padding-top: 0; }
 #projlist .lead-name,
 #oss .lead-name { font-family: var(--mono); }
 
-/* Expandable project rows */
+/* Expandable rows (writing, OSS) */
 .ix .ex { flex-basis: 100%; max-height: 0; overflow: hidden; transition: max-height 0.26s ease; }
 .ix.open .ex { max-height: 200px; }
 .ix .ex .inn { padding: 8px 0 2px; color: var(--dim); font-size: 13px; line-height: 1.6; max-width: 64ch; }
@@ -202,6 +202,24 @@ section:first-of-type { padding-top: 0; }
 .ix .plus { color: var(--faint); transition: transform 0.2s, color 0.2s; flex-shrink: 0; }
 .ix:hover .plus { color: var(--accent); }
 .ix.open .plus { transform: rotate(45deg); color: var(--accent); }
+
+/* Projects: always-visible description */
+#projlist .ix { cursor: default; flex-wrap: wrap; }
+#projlist .ix:hover { background: none; }
+#projlist .ix .ex { max-height: none; overflow: visible; }
+#projlist .ix .ex .inn { padding-top: 4px; }
+.gh-link {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+  color: var(--dim);
+  text-decoration: none;
+  margin-bottom: 6px;
+  font-family: var(--mono);
+}
+.gh-link:hover { color: var(--accent); }
+.gh-link svg { flex-shrink: 0; }
 
 /* ============================================================
    Writing section
