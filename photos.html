@@ -9,7 +9,7 @@ permalink: /photos.html
 
 <section id="photos">
   <div class="seclabel">photos<span class="fill"></span></div>
-  <div class="photos photos-full">
+  <div class="photos photos-full" id="photo-grid">
     {% for file in site.static_files %}
       {% if file.path contains 'trip-photos' %}
       <div class="ph">
@@ -18,4 +18,47 @@ permalink: /photos.html
       {% endif %}
     {% endfor %}
   </div>
+  <div class="photo-nav" id="photo-nav"></div>
 </section>
+
+<script>
+(function () {
+  const PER_PAGE = 40;
+  const grid = document.getElementById('photo-grid');
+  const nav  = document.getElementById('photo-nav');
+  const items = Array.from(grid.children);
+  const total = Math.ceil(items.length / PER_PAGE);
+  let page = 0;
+
+  function show(p) {
+    page = p;
+    items.forEach((el, i) => {
+      el.style.display = (i >= p * PER_PAGE && i < (p + 1) * PER_PAGE) ? '' : 'none';
+    });
+    nav.innerHTML = '';
+    if (p > 0) {
+      const prev = document.createElement('a');
+      prev.href = '#photos';
+      prev.className = 'photos-more';
+      prev.textContent = '← prev';
+      prev.addEventListener('click', e => { e.preventDefault(); show(page - 1); window.scrollTo(0, 0); });
+      nav.appendChild(prev);
+    }
+    if (p < total - 1) {
+      const next = document.createElement('a');
+      next.href = '#photos';
+      next.className = 'photos-more';
+      next.style.marginLeft = p > 0 ? '16px' : '';
+      next.textContent = 'next →';
+      next.addEventListener('click', e => { e.preventDefault(); show(page + 1); window.scrollTo(0, 0); });
+      nav.appendChild(next);
+    }
+    const label = document.createElement('span');
+    label.style.cssText = 'font-size:12px;color:var(--faint);margin-left:12px;';
+    label.textContent = total > 1 ? (page + 1) + ' / ' + total : '';
+    nav.appendChild(label);
+  }
+
+  show(0);
+})();
+</script>
