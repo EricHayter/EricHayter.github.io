@@ -3,38 +3,35 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ page.title }} — Eric Hayter</title>
-  {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
+  <title>{% if page.title %}{{ page.title }} — {% endif %}Eric Hayter</title>
+  <meta name="description" content="{{ page.description | default: 'Eric Hayter - systems programmer, CS &amp; Math student at uOttawa.' }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&display=swap">
   <link rel="stylesheet" href="/index.css">
 </head>
 <body>
-  <div class="wrap">
-    <aside>
-      <button class="menubtn" id="menubtn">menu</button>
-      <nav id="nav">
-        <a href="/">about</a>
-        <a href="/#oss">open source</a>
-        <a href="/#projects">projects</a>
-        <a href="/#writing">writing</a>
-        <a href="/photos.html"{% if page.url == '/photos.html' %} class="active"{% endif %}>photos</a>
-      </nav>
-      <div class="side-foot">
-        <a href="https://github.com/EricHayter" target="_blank" rel="noopener">github</a>
-        <a href="https://linkedin.com/in/eric-hayter" target="_blank" rel="noopener">linkedin</a>
-        <a href="mailto:hayter.eric@gmail.com">email</a>
-        <span class="side-stamp">Ottawa, ON</span>
-      </div>
-    </aside>
 
-    <main>
-      {{ content }}
-    </main>
-  </div>
+<nav>
+  <a class="me" href="/"><img src="/assets/images/site/headshot.png" alt="Line drawing of Eric Hayter"></a>
+  <p class="name"><a href="/"><b>Eric Hayter</b></a></p>
+  <p class="sec">
+    <a href="/#about">about</a>
+    <a href="/#oss">open source</a>
+    <a href="/#projects">projects</a>
+    <a href="/#photos">photos</a>
+  </p>
+  <p class="links">
+    <a href="https://github.com/EricHayter">github</a>
+    <a href="https://linkedin.com/in/eric-hayter">linkedin</a>
+    <a href="mailto:hayter.eric@gmail.com">email</a>
+  </p>
+  <p class="loc">Ottawa, ON</p>
+</nav>
 
-  <script>
-    const nav = document.getElementById('nav'), mb = document.getElementById('menubtn');
-    mb && mb.addEventListener('click', () => nav.classList.toggle('show'));
-    nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => nav.classList.remove('show')));
-  </script>
+<main>
+{{ content }}
+</main>
+
 </body>
 </html>

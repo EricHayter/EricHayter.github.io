@@ -5,16 +5,12 @@ filepath: "~/eric/photos"
 permalink: /photos.html
 ---
 
-<a class="back-link" href="/#photos">← back</a>
-
 <section id="photos">
-  <div class="seclabel">photos<span class="fill"></span></div>
-  <div class="photos photos-full" id="photo-grid">
+  <h2 class="tab"><span>photos</span></h2>
+  <div class="grid grid-full" id="photo-grid">
     {% for file in site.static_files %}
       {% if file.path contains 'trip-photos' %}
-      <div class="ph">
-        <img src="{{ file.path }}" alt="" loading="lazy">
-      </div>
+      <a class="duo" href="{{ file.path }}"><img src="{{ file.path }}" alt="" loading="lazy"></a>
       {% endif %}
     {% endfor %}
   </div>
@@ -54,7 +50,8 @@ permalink: /photos.html
       nav.appendChild(next);
     }
     const label = document.createElement('span');
-    label.style.cssText = 'font-size:12px;color:var(--faint);margin-left:12px;';
+    label.className = 'small';
+    label.style.marginLeft = '16px';
     label.textContent = total > 1 ? (page + 1) + ' / ' + total : '';
     nav.appendChild(label);
   }

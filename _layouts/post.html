@@ -2,9 +2,10 @@
 layout: default
 ---
 
-<a class="back-link" href="/#writing">← writing</a>
-<div class="post-title">{{ page.title }}</div>
-<div class="post-date">{{ page.date | date: "%Y.%m.%d" }}</div>
-<div class="prose">
-  {{ content }}
-</div>
+<section>
+  <h1 class="tab"><span>{{ page.title }}</span></h1>
+  <p class="date">{{ page.date | date: "%Y-%m-%d" }}</p>
+  <div class="prose">
+    {{ content }}
+  </div>
+</section>

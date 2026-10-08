@@ -1,159 +1,51 @@
 ---
+layout: default
 ---
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Eric Hayter</title>
-  <meta name="description" content="Eric Hayter - systems programmer, CS &amp; Math student at uOttawa.">
-  <link rel="stylesheet" href="index.css">
-</head>
-<body>
 
-<div class="wrap">
-  <aside>
-    <button class="menubtn" id="menubtn">index</button>
-    <nav id="nav">
-      <a href="#index" class="active">about</a>
-      <a href="#oss">open source</a>
-      <a href="#projects">projects</a>
-      <a href="#photos">photos</a>
-    </nav>
-    <div class="side-foot">
-      <a href="https://github.com/EricHayter" target="_blank" rel="noopener">github</a>
-      <a href="https://linkedin.com/in/eric-hayter" target="_blank" rel="noopener">linkedin</a>
-      <a href="mailto:hayter.eric@gmail.com">email</a>
-      <span class="side-stamp">Ottawa, ON</span>
-    </div>
-  </aside>
+<section id="about">
+  <h2 class="tab"><span>about</span></h2>
+  <h1>Eric Hayter</h1>
+  <p>I'm a CS &amp; Math student at the University of Ottawa. I work mostly in C++ and Go, with a focus on databases and systems programming.</p>
+  <p>I'm <a href="https://github.com/EricHayter">@EricHayter</a> on GitHub. Reach me at <a href="mailto:hayter.eric@gmail.com">hayter.eric@gmail.com</a> or on <a href="https://linkedin.com/in/eric-hayter">LinkedIn</a> (for work stuff).</p>
+</section>
 
-  <main>
-    <!-- ============================================================
-         INDEX / INTRO
-    ============================================================ -->
-    <section id="index" class="intro">
-      <img class="portrait twist-on-hover" src="assets/images/site/me.png" alt="Eric Hayter">
-      <div class="intro-text">
-        <div class="seclabel">about</div>
-        <p>I'm a CS &amp; Math student at the University of Ottawa. I work mostly in C++ and Go, with a focus on databases and systems programming.</p>
-        <p class="contact-line">I'm <a href="https://github.com/EricHayter">@EricHayter</a> on GitHub. Reach me at <a href="mailto:hayter.eric@gmail.com">hayter.eric@gmail.com</a> or on <a href="https://linkedin.com/in/eric-hayter">LinkedIn</a> (for work stuff).</p>
-      </div>
-    </section>
+<section id="oss">
+  <h2 class="tab"><span>open source</span></h2>
+  <p>Some of my <a href="https://github.com/pulls?q=is%3Apr+author%3AEricHayter+is%3Amerged">open source contributions</a>, including work on MariaDB and DragonflyDB.</p>
+</section>
 
-    <!-- ============================================================
-         OPEN SOURCE
-    ============================================================ -->
-    <section id="oss">
-      <div class="seclabel">open source</div>
-      <p>Some of my <a href="https://github.com/pulls?q=is%3Apr+author%3AEricHayter+is%3Amerged">open source contributions</a>, including work on MariaDB and DragonflyDB.</p>
-    </section>
+<section id="projects">
+  <h2 class="tab"><span>projects</span></h2>
+  <dl class="rows">
+    <div><dt><span>2026</span><a href="https://github.com/EricHayter/mlc">mlc</a></dt><dd>Memory latency checker. A Linux tool that uses perf events to capture ns latency and CPU cycles per load at different buffer sizes to measure cache performance.</dd></div>
+    <div><dt><span>2025</span><a href="https://github.com/EricHayter/yakv">yakv</a></dt><dd>LSM tree key-value store with write-ahead logging.</dd></div>
+    <div><dt><span>2025</span><a href="https://github.com/EricHayter/renderer2">renderer2</a></dt><dd>GPU-accelerated OpenGL 3.3 renderer. OBJ and glTF/GLB model support, ImGui parameter tweaking.</dd></div>
+    <div><dt><span>2025</span><a href="https://github.com/EricHayter/qnx-rpm">qnx-rpm</a></dt><dd>Real-time process monitor for QNX embedded devices. Won Best Use of QNX at cuHacking 6.</dd></div>
+    <div><dt><span>2025</span><a href="https://github.com/EricHayter/mikado">mikado</a></dt><dd>Visual tool for the Mikado Method. <a href="https://erichayter.github.io/mikado/">Live demo</a>.</dd></div>
+    <div><dt><span>2024</span><a href="https://github.com/EricHayter/yadb">yadb</a></dt><dd>Relational database engine from scratch. Bison/Flex SQL parser, Volcano-model executor, slotted-page storage with LRU-K buffer pool.</dd></div>
+    <div><dt><span>2024</span><a href="https://github.com/EricHayter/renderer">renderer</a></dt><dd>Software-rasterized .obj renderer. No graphics API, just SDL3 and math.</dd></div>
+  </dl>
+  <p class="small">Names link to source on GitHub.</p>
+</section>
 
-    <!-- ============================================================
-         PROJECTS
-    ============================================================ -->
-    <section id="projects">
-      <div class="seclabel">projects</div>
-      <div>
-        <div class="proj">
-          <p><span class="proj-date">[2026]</span> mlc (memory latency checker) (<a href="https://github.com/EricHayter/mlc">GitHub</a>)</p>
-          <p class="proj-desc">A Linux tool that uses perf events to capture ns latency and CPU cycles per load at different buffer sizes to measure cache performance.</p>
-        </div>
-        <div class="proj">
-          <p><span class="proj-date">[2024]</span> yadb (<a href="https://github.com/EricHayter/yadb">GitHub</a>)</p>
-          <p class="proj-desc">Relational database engine from scratch. Bison/Flex SQL parser, Volcano-model executor, slotted-page storage with LRU-K buffer pool.</p>
-        </div>
-        <div class="proj">
-          <p><span class="proj-date">[2025]</span> yakv (<a href="https://github.com/EricHayter/yakv">GitHub</a>)</p>
-          <p class="proj-desc">LSM tree key-value store with write-ahead logging.</p>
-        </div>
-        <div class="proj">
-          <p><span class="proj-date">[2025]</span> renderer2 (<a href="https://github.com/EricHayter/renderer2">GitHub</a>)</p>
-          <p class="proj-desc">GPU-accelerated OpenGL 3.3 renderer. OBJ and glTF/GLB model support, ImGui parameter tweaking.</p>
-        </div>
-        <div class="proj">
-          <p><span class="proj-date">[2024]</span> renderer (<a href="https://github.com/EricHayter/renderer">GitHub</a>)</p>
-          <p class="proj-desc">Software-rasterized .obj renderer. No graphics API, just SDL3 and math.</p>
-        </div>
-        <div class="proj">
-          <p><span class="proj-date">[2025]</span> qnx-rpm (<a href="https://github.com/EricHayter/qnx-rpm">GitHub</a>)</p>
-          <p class="proj-desc">Real-time process monitor for QNX embedded devices. Won Best Use of QNX at cuHacking 6.</p>
-        </div>
-        <div class="proj">
-          <p><span class="proj-date">[2025]</span> mikado (<a href="https://github.com/EricHayter/mikado">GitHub</a>)</p>
-          <p class="proj-desc">Visual tool for the Mikado Method. <a href="https://erichayter.github.io/mikado/">live demo</a></p>
-        </div>
-      </div>
-    </section>
+<!--
+<section id="writing">
+  <h2 class="tab"><span>writing</span></h2>
+  <dl class="rows">
+    {% for post in site.posts %}
+    <div><dt><span>{{ post.date | date: "%Y" }}</span><a href="{{ post.url }}">{{ post.title }}</a></dt><dd></dd></div>
+    {% endfor %}
+  </dl>
+</section>
+-->
 
-    <!--
-    <section id="writing" class="wr">
-      <div class="seclabel">writing</div>
-      <div class="idx">
-        {% for post in site.posts %}
-        <a class="ix" href="{{ post.url }}">
-          <span class="lead-name">{{ post.title }}</span>
-          <span class="dots"></span>
-          <span class="lead-meta">{{ post.date | date: "%Y.%m" }}</span>
-        </a>
-        {% endfor %}
-        {% if site.posts.size == 0 %}
-        <span style="font-size:13px;color:var(--faint);">posts coming soon</span>
-        {% endif %}
-      </div>
-    </section>
-    -->
-
-    <!-- ============================================================
-         PHOTOS
-    ============================================================ -->
-    <section id="photos">
-      <div class="seclabel">photos</div>
-      <div class="photos">
-        <div class="ph">
-          <img src="personal/assets/images/trip-photos/cropped_DSC00654.jpg" alt="photo">
-        </div>
-        <div class="ph">
-          <img src="personal/assets/images/trip-photos/cropped_snowshoeing.jpg" alt="photo">
-        </div>
-        <div class="ph">
-          <img src="personal/assets/images/trip-photos/cropped_DSC01571.JPG" alt="photo">
-        </div>
-        <div class="ph">
-          <img src="personal/assets/images/trip-photos/cropped_DSC01591.JPG" alt="photo">
-        </div>
-        <div class="ph">
-          <img src="personal/assets/images/trip-photos/cropped_DSC01654.JPG" alt="photo">
-        </div>
-        <div class="ph">
-          <img src="personal/assets/images/trip-photos/cropped_DSC01734.JPG" alt="photo">
-        </div>
-      </div>
-      <a class="photos-more" href="photos.html">all photos →</a>
-    </section>
-
-  </main>
-</div>
-
-<script>
-  // mobile menu
-  const nav = document.getElementById('nav'), mb = document.getElementById('menubtn');
-  mb && mb.addEventListener('click', () => nav.classList.toggle('show'));
-  nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => nav.classList.remove('show')));
-
-  // scroll-spy (only for anchor links)
-  const links = [...document.querySelectorAll('nav a[href^="#"]')];
-  const map = new Map(links.map(a => [a.getAttribute('href').slice(1), a]));
-  const obs = new IntersectionObserver(es => {
-    es.forEach(e => {
-      if (e.isIntersecting) {
-        links.forEach(l => l.classList.remove('active'));
-        map.get(e.target.id)?.classList.add('active');
-      }
-    });
-  }, { rootMargin: '-25% 0px -65% 0px' });
-  document.querySelectorAll('section').forEach(s => obs.observe(s));
-</script>
-
-</body>
-</html>
+<section id="photos">
+  <h2 class="tab"><span>photos</span></h2>
+  <div class="grid">
+    {% assign picks = "cropped_DSC00654.jpg,cropped_snowshoeing.jpg,cropped_DSC01571.JPG,cropped_DSC01591.JPG,cropped_DSC01654.JPG,cropped_DSC01734.JPG" | split: "," %}
+    {% for p in picks %}
+    <a class="duo" href="/personal/assets/images/trip-photos/{{ p }}"><img src="/personal/assets/images/trip-photos/{{ p }}" alt="photo" loading="lazy"></a>
+    {% endfor %}
+  </div>
+  <p><a href="/photos.html">All photos</a></p>
+</section>
