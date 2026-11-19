@@ -1,5 +1,5 @@
-/* browser default colours: black on white, or white on black when the visitor uses dark mode */
-:root { color-scheme: light dark; --paper: Canvas; --ink: CanvasText; }
+/* browser default colours, always light: black on white */
+:root { color-scheme: light; --paper: Canvas; --ink: CanvasText; }
 
 html { background: var(--paper); color: var(--ink); }
 body {
