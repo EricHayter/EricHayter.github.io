@@ -5,21 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{% if page.title %}{{ page.title }} — {% endif %}Eric Hayter</title>
   <meta name="description" content="{{ page.description | default: 'Eric Hayter - systems programmer, CS &amp; Math student at uOttawa.' }}">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&display=swap">
   <link rel="stylesheet" href="/index.css">
 </head>
 <body>
 
 <nav>
-  <a class="me" href="/"><img src="/assets/images/site/headshot.png" alt="Line drawing of Eric Hayter"></a>
-  <p class="name"><a href="/"><b>Eric Hayter</b></a></p>
+  <div class="me"><img src="/assets/images/site/me.webp" alt="Photo of Eric Hayter" width="360" height="360"></div>
+  <p class="name">Eric Hayter</p>
   <p class="sec">
-    <a href="/#about">about</a>
-    <a href="/#oss">open source</a>
-    <a href="/#projects">projects</a>
-    <a href="/#photos">photos</a>
+    <a href="/"{% if page.url == "/" %} aria-current="page"{% endif %}>about</a>
+    <a href="/projects.html"{% if page.url == "/projects.html" %} aria-current="page"{% endif %}>projects</a>
+    <a href="/photos.html"{% if page.url == "/photos.html" %} aria-current="page"{% endif %}>photos</a>
   </p>
   <p class="links">
     <a href="https://github.com/EricHayter">github</a>

@@ -6,7 +6,7 @@ permalink: /photos.html
 ---
 
 <section id="photos">
-  <h2 class="tab"><span>photos</span></h2>
+  <h1 class="sr-only">Photos</h1>
   <div class="grid grid-full" id="photo-grid">
     {% for file in site.static_files %}
       {% if file.path contains 'trip-photos' %}
@@ -36,7 +36,7 @@ permalink: /photos.html
       const prev = document.createElement('a');
       prev.href = '#photos';
       prev.className = 'photos-more';
-      prev.textContent = '← prev';
+      prev.textContent = 'prev';
       prev.addEventListener('click', e => { e.preventDefault(); show(page - 1); window.scrollTo(0, 0); });
       nav.appendChild(prev);
     }
@@ -45,7 +45,7 @@ permalink: /photos.html
       next.href = '#photos';
       next.className = 'photos-more';
       next.style.marginLeft = p > 0 ? '16px' : '';
-      next.textContent = 'next →';
+      next.textContent = 'next';
       next.addEventListener('click', e => { e.preventDefault(); show(page + 1); window.scrollTo(0, 0); });
       nav.appendChild(next);
     }

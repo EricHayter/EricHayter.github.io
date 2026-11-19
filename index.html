@@ -3,29 +3,16 @@ layout: default
 ---
 
 <section id="about">
-  <h2 class="tab"><span>about</span></h2>
-  <h1>Eric Hayter</h1>
-  <p>I'm a CS &amp; Math student at the University of Ottawa. I work mostly in C++ and Go, with a focus on databases and systems programming.</p>
+  <h1 class="sr-only">Eric Hayter</h1>
+  <p>I study math and computer science at the University of Ottawa.</p>
   <p>I'm <a href="https://github.com/EricHayter">@EricHayter</a> on GitHub. Reach me at <a href="mailto:hayter.eric@gmail.com">hayter.eric@gmail.com</a> or on <a href="https://linkedin.com/in/eric-hayter">LinkedIn</a> (for work stuff).</p>
-</section>
-
-<section id="oss">
-  <h2 class="tab"><span>open source</span></h2>
-  <p>Some of my <a href="https://github.com/pulls?q=is%3Apr+author%3AEricHayter+is%3Amerged">open source contributions</a>, including work on MariaDB and DragonflyDB.</p>
-</section>
-
-<section id="projects">
-  <h2 class="tab"><span>projects</span></h2>
-  <dl class="rows">
-    <div><dt><span>2026</span><a href="https://github.com/EricHayter/mlc">mlc</a></dt><dd>Memory latency checker. A Linux tool that uses perf events to capture ns latency and CPU cycles per load at different buffer sizes to measure cache performance.</dd></div>
-    <div><dt><span>2025</span><a href="https://github.com/EricHayter/yakv">yakv</a></dt><dd>LSM tree key-value store with write-ahead logging.</dd></div>
-    <div><dt><span>2025</span><a href="https://github.com/EricHayter/renderer2">renderer2</a></dt><dd>GPU-accelerated OpenGL 3.3 renderer. OBJ and glTF/GLB model support, ImGui parameter tweaking.</dd></div>
-    <div><dt><span>2025</span><a href="https://github.com/EricHayter/qnx-rpm">qnx-rpm</a></dt><dd>Real-time process monitor for QNX embedded devices. Won Best Use of QNX at cuHacking 6.</dd></div>
-    <div><dt><span>2025</span><a href="https://github.com/EricHayter/mikado">mikado</a></dt><dd>Visual tool for the Mikado Method. <a href="https://erichayter.github.io/mikado/">Live demo</a>.</dd></div>
-    <div><dt><span>2024</span><a href="https://github.com/EricHayter/yadb">yadb</a></dt><dd>Relational database engine from scratch. Bison/Flex SQL parser, Volcano-model executor, slotted-page storage with LRU-K buffer pool.</dd></div>
-    <div><dt><span>2024</span><a href="https://github.com/EricHayter/renderer">renderer</a></dt><dd>Software-rasterized .obj renderer. No graphics API, just SDL3 and math.</dd></div>
-  </dl>
-  <p class="small">Names link to source on GitHub.</p>
+  <p>I've also made some <a href="https://github.com/pulls?q=is%3Apr+author%3AEricHayter+is%3Amerged">open source contributions</a>, including work on MariaDB and DragonflyDB.</p>
+  <p>Things I'm into:</p>
+  <ul>
+    <li><strong>Databases.</strong> They're some of the most vital pieces of software, used everywhere in and outside of tech. With the amount of data in the world growing, how can we build systems that scale to modern-day workloads?</li>
+    <li><strong>Systems programming.</strong> A lot of the world's most critical software (networking infrastructure, banking, etc.) is still written in systems languages. How can we write code that is both safe and performant, while staying maintainable?</li>
+    <li><strong>AI inference.</strong> AI is the greatest invention of my (limited) lifetime, but cost and availability still limit who gets to use it. With demand only growing (bigger models, longer context windows, more agents), how can we serve models efficiently enough to make them widely available?</li>
+  </ul>
 </section>
 
 <!--
@@ -38,14 +25,3 @@ layout: default
   </dl>
 </section>
 -->
-
-<section id="photos">
-  <h2 class="tab"><span>photos</span></h2>
-  <div class="grid">
-    {% assign picks = "cropped_DSC00654.jpg,cropped_snowshoeing.jpg,cropped_DSC01571.JPG,cropped_DSC01591.JPG,cropped_DSC01654.JPG,cropped_DSC01734.JPG" | split: "," %}
-    {% for p in picks %}
-    <a class="duo" href="/personal/assets/images/trip-photos/{{ p }}"><img src="/personal/assets/images/trip-photos/{{ p }}" alt="photo" loading="lazy"></a>
-    {% endfor %}
-  </div>
-  <p><a href="/photos.html">All photos</a></p>
-</section>
